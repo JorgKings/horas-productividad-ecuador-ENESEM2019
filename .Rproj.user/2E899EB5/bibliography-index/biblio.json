@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1111/ecoj.12166",
+            "author": [
+                {
+                    "family": "Pencavel",
+                    "given": "John"
+                }
+            ],
+            "container-title": "The Economic Journal",
+            "id": "pencavel2015",
+            "issue": "589",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "2052-2076",
+            "title": "The productivity of working hours",
+            "type": "article-journal",
+            "volume": "125"
+        },
+        {
+            "DOI": "10.1016/j.labeco.2017.03.006",
+            "author": [
+                {
+                    "family": "Collewet",
+                    "given": "Marion"
+                },
+                {
+                    "family": "Sauermann",
+                    "given": "Jan"
+                }
+            ],
+            "container-title": "Labour Economics",
+            "id": "collewet2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "96-106",
+            "title": "Working hours and productivity",
+            "type": "article-journal",
+            "volume": "47"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
+}

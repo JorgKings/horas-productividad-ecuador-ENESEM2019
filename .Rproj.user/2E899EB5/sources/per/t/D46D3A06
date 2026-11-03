@@ -1,0 +1,26 @@
+{
+    "id": "D46D3A06",
+    "path": "~/Universidad/GitHub/horas-productividad-ecuador-ENESEM2019/scripts/04_diagnostico_provincia_sector.R",
+    "project_path": "scripts/04_diagnostico_provincia_sector.R",
+    "type": "r_source",
+    "hash": "763011255",
+    "contents": "",
+    "dirty": false,
+    "created": 1793729143860.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "160,1",
+        "scrollLine": "139"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1793729386,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1793729386282,
+    "read_only": false,
+    "read_only_alternatives": []
+}

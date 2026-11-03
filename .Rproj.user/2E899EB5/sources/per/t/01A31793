@@ -1,0 +1,26 @@
+{
+    "id": "01A31793",
+    "path": "~/Universidad/GitHub/horas-productividad-ecuador-ENESEM2019/scripts/01_preparar_base.R",
+    "project_path": "scripts/01_preparar_base.R",
+    "type": "r_source",
+    "hash": "618076145",
+    "contents": "",
+    "dirty": false,
+    "created": 1793727130609.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "123,0",
+        "scrollLine": "111"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1793727895,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1793727895194,
+    "read_only": false,
+    "read_only_alternatives": []
+}

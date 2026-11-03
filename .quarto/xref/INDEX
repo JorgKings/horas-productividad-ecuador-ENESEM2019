@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "9e3c5f44"
+  },
+  "intro.qmd": {
+    "intro.html": "8bb4ede4"
+  },
+  "summary.qmd": {
+    "summary.html": "a2cc57bf"
+  },
+  "references.qmd": {
+    "references.html": "bbb11246"
+  },
+  "capitulos/datos_variables.qmd": {
+    "datos_variables.html": "eca938b7"
+  },
+  "capitulos/introduccion.qmd": {
+    "introduccion.html": "3b787604"
+  },
+  "capitulos/diagnostico_sectorial.qmd": {
+    "diagnostico_sectorial.html": "32a9e356"
+  },
+  "capitulos/diagnostico_territorial.qmd": {
+    "diagnostico_territorial.html": "aac5a0c6"
+  },
+  "capitulos/problemas_potencialidades.qmd": {
+    "problemas_potencialidades.html": "b848247a"
+  },
+  "capitulos/evidencia_correlacional.qmd": {
+    "evidencia_correlacional.html": "71b4e51f"
+  },
+  "capitulos/revision_literatura.qmd": {
+    "revision_literatura.html": "31a082d2"
+  },
+  "capitulos/referencias.qmd": {
+    "referencias.html": "fea4a869"
+  }
+}
