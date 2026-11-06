@@ -1,0 +1,38 @@
+
+/*-- scss:defaults --*/
+
+// Colores
+$primary: #176B87;
+$link-color: #176B87;
+
+// Tipografía
+$font-family-sans-serif: "Georgia", serif;
+$headings-font-family: "Georgia", serif;
+
+// Navegación
+$sidebar-hl: #176B87;
+$navbar-hl: #176B87;
+$toc-active-border: #176B87;
+
+/*-- scss:rules --*/
+
+// Títulos
+h1, h2, h3 {
+  color: #243746;
+}
+
+// Enlaces
+a:hover {
+  color: #10485C;
+}
+
+// Tabla de contenidos
+#TOC a.active {
+  color: #176B87;
+}
+
+// Bibliografía
+#refs {
+  font-size: 0.95em;
+  line-height: 1.6;
+}

@@ -22,21 +22,48 @@ book:
     - capitulos/diagnostico_territorial.qmd
     - capitulos/problemas_potencialidades.qmd
     - capitulos/evidencia_correlacional.qmd
-    
     - capitulos/referencias.qmd
 
 lang: es
 
+# Referencias bibliográficas
 bibliography: references.bib
+csl: https://www.zotero.org/styles/apa
 
+# Configuración general
 toc: true
 number-sections: true
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - journal
+      - custom.scss
+
+    mainfont: "Georgia"
+    fontsize: 17px
+    linestretch: 1.6
+    fontcolor: "#252525"
+    linkcolor: "#176B87"
+
+    toc: true
+    toc-depth: 3
+    number-sections: true
 
   pdf:
     documentclass: scrreprt
+    pdf-engine: xelatex
+    mainfont: "Georgia"
+    fontsize: 12pt
+    linestretch: 1.5
+
+    colorlinks: true
+    linkcolor: "blue"
+    urlcolor: "blue"
+    citecolor: "blue"
+
+    toc: true
+    toc-depth: 3
+    number-sections: true
 
 editor: visual

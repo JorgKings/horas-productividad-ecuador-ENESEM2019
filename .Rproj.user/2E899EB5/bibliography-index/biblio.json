@@ -1,6 +1,768 @@
 {
     "sources": [
         {
+            "DOI": "10.1016/j.labeco.2023.102504",
+            "URL": "https://doi.org/10.1016/j.labeco.2023.102504",
+            "author": [
+                {
+                    "family": "Braun",
+                    "given": "Christine"
+                },
+                {
+                    "family": "Kydland",
+                    "given": "Finn"
+                },
+                {
+                    "family": "Rupert",
+                    "given": "Peter"
+                }
+            ],
+            "container-title": "Labour Economics",
+            "id": "braun2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "102504",
+            "title": "Quality hours: Measuring labor input",
+            "type": "article-journal",
+            "volume": "88"
+        },
+        {
+            "DOI": "10.1016/j.euroecorev.2024.104788",
+            "URL": "https://doi.org/10.1016/j.euroecorev.2024.104788",
+            "author": [
+                {
+                    "family": "Burdett",
+                    "given": "Ashley"
+                },
+                {
+                    "family": "Etheridge",
+                    "given": "Ben"
+                },
+                {
+                    "family": "Tang",
+                    "given": "Li"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Yikai"
+                }
+            ],
+            "container-title": "European Economic Review",
+            "id": "burdett2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "104788",
+            "title": "Worker productivity during Covid-19 and adaptation to working from home",
+            "type": "article-journal",
+            "volume": "167"
+        },
+        {
+            "DOI": "10.1038/s41562-025-02259-6",
+            "URL": "https://doi.org/10.1038/s41562-025-02259-6",
+            "author": [
+                {
+                    "family": "Fan",
+                    "given": "Wen"
+                },
+                {
+                    "family": "Schor",
+                    "given": "Juliet B."
+                },
+                {
+                    "family": "Kelly",
+                    "given": "Orla"
+                },
+                {
+                    "family": "Gu",
+                    "given": "Guolin"
+                }
+            ],
+            "container-title": "Nature Human Behaviour",
+            "id": "fan2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "2153-2168",
+            "title": "Work time reduction via a 4-day workweek finds improvements in workers’ well-being",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "DOI": "10.1038/s41586-024-07500-2",
+            "URL": "https://doi.org/10.1038/s41586-024-07500-2",
+            "author": [
+                {
+                    "family": "Bloom",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Han",
+                    "given": "Ruobing"
+                },
+                {
+                    "family": "Liang",
+                    "given": "James"
+                }
+            ],
+            "container-title": "Nature",
+            "id": "bloomhan2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "920-925",
+            "title": "Hybrid working from home improves retention without damaging performance",
+            "type": "article-journal",
+            "volume": "630"
+        },
+        {
+            "DOI": "10.1177/00197939261456260",
+            "URL": "https://doi.org/10.1177/00197939261456260",
+            "author": [
+                {
+                    "family": "Mang",
+                    "given": "Colin F."
+                },
+                {
+                    "family": "Anwar",
+                    "given": "Amar"
+                }
+            ],
+            "container-title": "ILR Review",
+            "id": "mang2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "title": "Does Working from Home Improve Employees’ Productivity? Empirical Evidence from a Meta-Analysis",
+            "type": "article-journal",
+            "volume": "79"
+        },
+        {
+            "DOI": "10.1086/721803",
+            "URL": "https://doi.org/10.1086/721803",
+            "author": [
+                {
+                    "family": "Gibbs",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Mengel",
+                    "given": "Friederike"
+                },
+                {
+                    "family": "Siemroth",
+                    "given": "Christoph"
+                }
+            ],
+            "container-title": "Journal of Political Economy Microeconomics",
+            "id": "gibbs2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Work from Home and Productivity: Evidence from Personnel and Analytics Data on Information Technology Professionals",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "DOI": "10.1093/cje/bead049",
+            "URL": "https://doi.org/10.1093/cje/bead049",
+            "author": [
+                {
+                    "family": "Mullens",
+                    "given": "Francisca"
+                },
+                {
+                    "family": "Glorieux",
+                    "given": "Ignace"
+                }
+            ],
+            "container-title": "Cambridge Journal of Economics",
+            "id": "mullens2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "41-68",
+            "title": "Reducing working hours: shorter days or fewer days per week? Insights from a 30-hour workweek experiment",
+            "type": "article-journal",
+            "volume": "48"
+        },
+        {
+            "DOI": "10.1016/j.euroecorev.2025.105220",
+            "URL": "https://doi.org/10.1016/j.euroecorev.2025.105220",
+            "author": [
+                {
+                    "family": "Gunnesmo",
+                    "given": "Marius F."
+                },
+                {
+                    "family": "Hansen",
+                    "given": "Casper W."
+                }
+            ],
+            "container-title": "European Economic Review",
+            "id": "gunnesmo2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "105220",
+            "title": "Labor-market effects of introducing the 8-hour workday",
+            "type": "article-journal",
+            "volume": "182"
+        },
+        {
+            "DOI": "10.1177/00197939231209965",
+            "URL": "https://doi.org/10.1177/00197939231209965",
+            "author": [
+                {
+                    "family": "Hamermesh",
+                    "given": "Daniel S."
+                },
+                {
+                    "family": "Biddle",
+                    "given": "Jeff E."
+                }
+            ],
+            "container-title": "ILR Review",
+            "id": "hamermesh2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "title": "Days of Work over a Half Century: The Rise of the Four-Day Workweek",
+            "type": "article-journal",
+            "volume": "78"
+        },
+        {
+            "DOI": "10.1016/j.econmod.2026.107844",
+            "URL": "https://doi.org/10.1016/j.econmod.2026.107844",
+            "author": [
+                {
+                    "family": "Albinowski",
+                    "given": "Maciej"
+                },
+                {
+                    "family": "Franaszek",
+                    "given": "Joanna"
+                }
+            ],
+            "container-title": "Economic Modelling",
+            "id": "albinowski2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "107844",
+            "title": "Minimum hours constraints: The role of organizational practices",
+            "type": "article-journal",
+            "volume": "164"
+        },
+        {
+            "DOI": "10.1016/j.jpolmod.2025.09.002",
+            "URL": "https://doi.org/10.1016/j.jpolmod.2025.09.002",
+            "author": [
+                {
+                    "family": "Mariev",
+                    "given": "Oleg"
+                },
+                {
+                    "family": "Turkanova",
+                    "given": "Sophia V."
+                },
+                {
+                    "family": "Mamman",
+                    "given": "Suleiman O."
+                }
+            ],
+            "container-title": "Journal of Policy Modeling",
+            "id": "mariev2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "1264-1283",
+            "title": "Labor productivity and the role of labor market deregulation: Are there limits? Evidence from BRICS",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "DOI": "10.1016/j.econmod.2025.107302",
+            "URL": "https://doi.org/10.1016/j.econmod.2025.107302",
+            "author": [
+                {
+                    "family": "Peng",
+                    "given": "Qing"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Haisheng"
+                },
+                {
+                    "family": "Li",
+                    "given": "Jie"
+                }
+            ],
+            "container-title": "Economic Modelling",
+            "id": "peng2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "107302",
+            "title": "Gender gap in working span, employment, and labor productivity",
+            "type": "article-journal",
+            "volume": "152"
+        },
+        {
+            "DOI": "10.1111/bjir.70020",
+            "URL": "https://doi.org/10.1111/bjir.70020",
+            "author": [
+                {
+                    "family": "Schwarz",
+                    "given": "Susan"
+                },
+                {
+                    "family": "Du",
+                    "given": "Jun"
+                },
+                {
+                    "family": "Nduka",
+                    "given": "Uzoamaka"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Lin"
+                }
+            ],
+            "container-title": "British Journal of Industrial Relations",
+            "id": "schwarz2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "148-167",
+            "title": "The Impact of Staff and Manager Training on Firm Productivity: Differential and Interaction Effects",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "DOI": "10.1007/s11187-026-01191-x",
+            "URL": "https://doi.org/10.1007/s11187-026-01191-x",
+            "author": [
+                {
+                    "family": "Feng",
+                    "given": "Yuchen"
+                },
+                {
+                    "family": "Henley",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Kochanova",
+                    "given": "Anna"
+                }
+            ],
+            "container-title": "Small Business Economics",
+            "id": "feng2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "581-618",
+            "title": "When formal management practices meet informal governance: family ownership and productivity in UK firms",
+            "type": "article-journal",
+            "volume": "67"
+        },
+        {
+            "DOI": "10.1016/j.tourman.2024.105095",
+            "URL": "https://doi.org/10.1016/j.tourman.2024.105095",
+            "author": [
+                {
+                    "family": "Seo",
+                    "given": "Kwanglim"
+                },
+                {
+                    "family": "Soh",
+                    "given": "Jungtae"
+                }
+            ],
+            "container-title": "Tourism Management",
+            "id": "seo2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "105095",
+            "title": "Examining the impact of workforce reductions on firm performance",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s40821-026-00355-9",
+            "URL": "https://doi.org/10.1007/s40821-026-00355-9",
+            "author": [
+                {
+                    "family": "Gutiérrez-Ramírez",
+                    "given": "Luis"
+                },
+                {
+                    "family": "Levendis",
+                    "given": "John"
+                },
+                {
+                    "family": "Lee",
+                    "given": "Sang Hyup"
+                }
+            ],
+            "container-title": "Eurasian Business Review",
+            "id": "gutierrez2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "title": "Who benefits most from structured management practices? Evidence from the World Bank enterprise survey",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1016/j.infoecopol.2025.101147",
+            "URL": "https://doi.org/10.1016/j.infoecopol.2025.101147",
+            "author": [
+                {
+                    "family": "Andres",
+                    "given": "Raphaela"
+                },
+                {
+                    "family": "Niebel",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "Sack",
+                    "given": "Robin"
+                }
+            ],
+            "container-title": "Information Economics and Policy",
+            "id": "andres2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "101147",
+            "title": "Big data and firm-level productivity: A cross-country comparison",
+            "type": "article-journal",
+            "volume": "71"
+        },
+        {
+            "DOI": "10.1016/j.ijpe.2024.109475",
+            "URL": "https://doi.org/10.1016/j.ijpe.2024.109475",
+            "author": [
+                {
+                    "family": "Frank",
+                    "given": "Alejandro G."
+                },
+                {
+                    "family": "Sturgeon",
+                    "given": "Timothy J."
+                },
+                {
+                    "family": "Benitez",
+                    "given": "Guilherme B."
+                },
+                {
+                    "family": "Marodin",
+                    "given": "Giuliano A."
+                },
+                {
+                    "family": "Ferreira e Cunha",
+                    "given": "Samantha"
+                }
+            ],
+            "container-title": "International Journal of Production Economics",
+            "id": "frank2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "109475",
+            "title": "How Lean and Industry 4.0 affect worker outcomes and operational performance: A quantitative assessment of competing models",
+            "type": "article-journal",
+            "volume": "279"
+        },
+        {
+            "DOI": "10.1016/j.jbusres.2025.115190",
+            "URL": "https://doi.org/10.1016/j.jbusres.2025.115190",
+            "author": [
+                {
+                    "family": "Van Beurden",
+                    "given": "Jeske"
+                },
+                {
+                    "family": "Van de Voorde",
+                    "given": "Karina"
+                },
+                {
+                    "family": "Van Veldhoven",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Jiang",
+                    "given": "Kaifeng"
+                }
+            ],
+            "container-title": "Journal of Business Research",
+            "id": "vanbeurden2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "115190",
+            "title": "Do managers and employees see eye to eye? A dyadic perspective on high-performance work practices and their impact on performance",
+            "type": "article-journal",
+            "volume": "190"
+        },
+        {
+            "DOI": "10.1016/j.jbvi.2025.e00572",
+            "URL": "https://doi.org/10.1016/j.jbvi.2025.e00572",
+            "author": [
+                {
+                    "family": "Hansen",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Usanova",
+                    "given": "Ksenia"
+                },
+                {
+                    "family": "Geraudel",
+                    "given": "Mickael"
+                }
+            ],
+            "container-title": "Journal of Business Venturing Insights",
+            "id": "hansen2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "e00572",
+            "title": "A meta-analysis on the effects of high-performance work practices in small and medium-sized enterprises: An exploration of organizational- and individual-level outcomes",
+            "type": "article-journal",
+            "volume": "24"
+        },
+        {
+            "DOI": "10.1111/irel.70000",
+            "URL": "https://doi.org/10.1111/irel.70000",
+            "author": [
+                {
+                    "family": "Pickens",
+                    "given": "Joseph"
+                },
+                {
+                    "family": "Sojourner",
+                    "given": "Aaron"
+                }
+            ],
+            "container-title": "Industrial Relations: A Journal of Economy and Society",
+            "id": "pickens2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "132-155",
+            "title": "Effects of Fair Workweek Laws on Labor Market Outcomes",
+            "type": "article-journal",
+            "volume": "65"
+        },
+        {
+            "DOI": "10.1007/s11301-023-00347-3",
+            "URL": "https://doi.org/10.1007/s11301-023-00347-3",
+            "author": [
+                {
+                    "family": "Campbell",
+                    "given": "Timothy T."
+                }
+            ],
+            "container-title": "Management Review Quarterly",
+            "id": "campbell2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "1791-1807",
+            "title": "The four-day work week: a chronological, systematic review of the academic literature",
+            "type": "article-journal",
+            "volume": "74"
+        },
+        {
+            "DOI": "10.1016/j.apmrv.2025.100399",
+            "URL": "https://doi.org/10.1016/j.apmrv.2025.100399",
+            "author": [
+                {
+                    "family": "Suhail",
+                    "given": "Aneeqa"
+                },
+                {
+                    "dropping-particle": "van de",
+                    "family": "Voorde",
+                    "given": "Karina"
+                },
+                {
+                    "family": "Steen",
+                    "given": "Trui"
+                },
+                {
+                    "family": "Meeusen",
+                    "given": "Cecil"
+                }
+            ],
+            "container-title": "Asia Pacific Management Review",
+            "id": "suhail2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "100399",
+            "title": "Exploring the links between human resource practices, employee outcomes and performance at the individual and team levels",
+            "type": "article-journal",
+            "volume": "30"
+        },
+        {
+            "DOI": "10.1016/j.frl.2025.108573",
+            "URL": "https://doi.org/10.1016/j.frl.2025.108573",
+            "author": [
+                {
+                    "family": "Shin",
+                    "given": "Yong Hyun"
+                },
+                {
+                    "family": "Lee",
+                    "given": "Ho-Seok"
+                }
+            ],
+            "container-title": "Finance Research Letters",
+            "id": "shin2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "108573",
+            "title": "Work hour flexibility and job mobility",
+            "type": "article-journal",
+            "volume": "86"
+        },
+        {
+            "DOI": "10.1016/j.emj.2024.05.007",
+            "URL": "https://doi.org/10.1016/j.emj.2024.05.007",
+            "author": [
+                {
+                    "family": "Berkery",
+                    "given": "Elaine"
+                },
+                {
+                    "family": "Peretz",
+                    "given": "Hilla"
+                },
+                {
+                    "family": "Tiernan",
+                    "given": "Siobhan"
+                },
+                {
+                    "family": "Morley",
+                    "given": "Michael J."
+                }
+            ],
+            "container-title": "European Management Journal",
+            "id": "berkery2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "640-649",
+            "title": "The impact of flexi-time uptake on organizational outcomes and the moderating role of formal and informal institutions across 22 countries",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
             "DOI": "10.1111/ecoj.12166",
             "author": [
                 {
