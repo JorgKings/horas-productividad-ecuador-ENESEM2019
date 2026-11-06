@@ -14,7 +14,37 @@
     "href": "index.html#sobre-la-investigación",
     "title": "Horas de trabajo y productividad laboral en las empresas ecuatorianas",
     "section": "Sobre la investigación",
-    "text": "Sobre la investigación\nHoras de trabajo y productividad laboral en las empresas ecuatorianas: diagnóstico territorial y sectorial con datos de ENESEM 2019.\nLa presente investigación analiza la asociación entre las horas trabajadas y la productividad laboral de las empresas ecuatorianas, considerando las diferencias territoriales y sectoriales.\nPara ello, se utilizan microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) del Ecuador.\nEl estudio desarrolla un análisis descriptivo y correlacional, utilizando como indicador de productividad laboral el valor agregado por persona ocupada.",
+    "text": "Sobre la investigación\nHoras de trabajo y productividad laboral en las empresas ecuatorianas: diagnóstico territorial y sectorial con datos de ENESEM 2019.\nLa presente investigación analiza la asociación entre las horas trabajadas y la productividad laboral de las empresas ecuatorianas, considerando las diferencias sectoriales y territoriales.\nPara ello, se utilizan microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) del Ecuador.\nEl estudio desarrolla un análisis descriptivo y correlacional utilizando como indicador de productividad laboral el valor agregado por persona ocupada.",
+    "crumbs": [
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "index.html#resumen",
+    "href": "index.html#resumen",
+    "title": "Horas de trabajo y productividad laboral en las empresas ecuatorianas",
+    "section": "Resumen",
+    "text": "Resumen\nLa presente investigación tiene como objetivo analizar la asociación entre las horas de trabajo y la productividad laboral de las empresas ecuatorianas, considerando las diferencias entre sectores económicos y provincias.\nSe utilizan microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019 del Instituto Nacional de Estadística y Censos (INEC). La base original comprende 3.779 registros empresariales, de los cuales 3.677 cuentan con información válida para el análisis correlacional.\nLa productividad laboral se aproxima mediante el valor agregado por persona ocupada, mientras que el tiempo de trabajo se mide a través de las horas anuales trabajadas por persona ocupada.\nLa metodología comprende un diagnóstico sectorial y territorial, el cálculo de brechas de productividad y un análisis de correlación mediante los coeficientes de Pearson y Spearman.\nLos resultados descriptivos evidencian diferencias importantes de productividad entre sectores económicos y provincias. Por su parte, la correlación general ponderada entre horas trabajadas y productividad es aproximadamente -0,0033, lo que indica una asociación lineal prácticamente nula en la muestra analizada.\nSe concluye, de manera preliminar, que las diferencias de productividad empresarial no presentan una asociación lineal general fuerte con la cantidad de horas trabajadas. Debido al carácter transversal de los datos, estos resultados no permiten establecer efectos causales de una reducción de la jornada laboral.",
+    "crumbs": [
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "index.html#palabras-clave",
+    "href": "index.html#palabras-clave",
+    "title": "Horas de trabajo y productividad laboral en las empresas ecuatorianas",
+    "section": "Palabras clave",
+    "text": "Palabras clave\nProductividad laboral; horas de trabajo; economía laboral; heterogeneidad empresarial; diagnóstico territorial; Ecuador; ENESEM 2019.",
+    "crumbs": [
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "index.html#organización-del-documento",
+    "href": "index.html#organización-del-documento",
+    "title": "Horas de trabajo y productividad laboral en las empresas ecuatorianas",
+    "section": "Organización del documento",
+    "text": "Organización del documento\nEl documento presenta la introducción y los objetivos de investigación, la revisión de literatura, la descripción de los datos y variables, los diagnósticos sectorial y territorial, la identificación de problemas y potencialidades y el análisis de evidencia correlacional.\nLas tablas, figuras y resultados se generan a partir del procesamiento de los microdatos de ENESEM 2019 mediante el lenguaje de programación R.",
     "crumbs": [
       "Presentación"
     ]
@@ -174,7 +204,7 @@
     "href": "capitulos/datos_variables.html#tratamiento-de-datos",
     "title": "3  Datos y variables",
     "section": "3.4 Tratamiento de datos",
-    "text": "3.4 Tratamiento de datos\nSe conservaron los registros originales y se construyeron indicadores de calidad para identificar valores faltantes, productividad no positiva y observaciones con un número reducido de horas anuales por trabajador.\nLa muestra utilizada para el análisis correlacional incluye empresas con valores finitos de ambos indicadores y sector económico identificado.\n\n\n\nResumen del tratamiento de datos, ENESEM 2019\n\n\nIndicador\nObservaciones\n\n\n\n\nEmpresas originales\n3779\n\n\nSin indicador de horas valido\n102\n\n\nSin indicador de productividad valido\n72\n\n\nProductividad no positiva\n137\n\n\nHoras anuales por trabajador menores a 1000\n18\n\n\nEmpresas validas para correlacion\n3677\n\n\nEmpresas validas con valor agregado positivo\n3544\n\n\n\n\n\nLas categorías de revisión pueden superponerse y no representan necesariamente exclusiones independientes.",
+    "text": "3.4 Tratamiento de datos\nSe conservaron los registros originales y se construyeron indicadores de calidad para identificar valores faltantes, productividad no positiva y observaciones con un número reducido de horas anuales por trabajador.\nLa muestra utilizada para el análisis correlacional incluye empresas con valores finitos de ambos indicadores y sector económico identificado.\n\n\n\n\nTabla 3.1: Resumen del tratamiento de datos, ENESEM 2019\n\n\n\n\nResumen del tratamiento de datos, ENESEM 2019\n\n\nIndicador\nObservaciones\n\n\n\n\nEmpresas originales\n3779\n\n\nSin indicador de horas valido\n102\n\n\nSin indicador de productividad valido\n72\n\n\nProductividad no positiva\n137\n\n\nHoras anuales por trabajador menores a 1000\n18\n\n\nEmpresas validas para correlacion\n3677\n\n\nEmpresas validas con valor agregado positivo\n3544\n\n\n\n\n\n\n\n\nLas categorías de revisión pueden superponerse y no representan necesariamente exclusiones independientes.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
     ]
