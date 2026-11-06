@@ -1,4 +1,3 @@
-
 # Evidencia empírica correlacional
 
 ## Objetivo del análisis
@@ -158,13 +157,13 @@ Esta diferencia indica que el resultado inicial es sensible a observaciones extr
 
 Los resultados deben interpretarse considerando las siguientes limitaciones:
 
-1. La base corresponde a un único año, por lo que no permite observar cambios de productividad antes y después de modificaciones de jornada laboral.
+1.  La base corresponde a un único año, por lo que no permite observar cambios de productividad antes y después de modificaciones de jornada laboral.
 
-2. Las horas trabajadas y la productividad laboral se calculan utilizando el personal ocupado como denominador común. Esto puede generar asociaciones matemáticas que no reflejen exclusivamente una relación económica.
+2.  Las horas trabajadas y la productividad laboral se calculan utilizando el personal ocupado como denominador común. Esto puede generar asociaciones matemáticas que no reflejen exclusivamente una relación económica.
 
-3. La productividad laboral puede depender de factores adicionales, como capital, tecnología, organización empresarial y composición sectorial.
+3.  La productividad laboral puede depender de factores adicionales, como capital, tecnología, organización empresarial y composición sectorial.
 
-4. Las correlaciones presentadas son descriptivas. No se han estimado efectos causales ni se han realizado pruebas formales de significancia ajustadas al diseño muestral.
+4.  Las correlaciones presentadas son descriptivas. No se han estimado efectos causales ni se han realizado pruebas formales de significancia ajustadas al diseño muestral.
 
 ## Interpretación general
 

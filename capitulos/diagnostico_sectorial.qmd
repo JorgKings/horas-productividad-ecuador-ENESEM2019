@@ -1,62 +1,601 @@
 
 # Diagnóstico sectorial
 
-## Caracterización de los sectores económicos
+## Objetivo y alcance
 
-El diagnóstico sectorial examina las diferencias en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas incluidas en la Encuesta Estructural Empresarial (ENESEM) 2019.
+**Caracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.**
 
-El análisis comprende cinco sectores económicos: comercio, construcción, manufactura, minería y servicios.
+El análisis examina cinco sectores económicos: comercio, construcción, manufactura, minería y servicios. Para ello, se utilizan los microdatos procesados de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) del Ecuador.
 
-La productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. Las horas de trabajo se expresan como horas anuales por persona ocupada.
+La productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. La intensidad del trabajo se aproxima mediante las horas anuales trabajadas por persona ocupada.
 
-## Horas trabajadas y productividad laboral por sector
+El diagnóstico permite identificar diferencias sectoriales, examinar la distribución de los indicadores entre empresas y reconocer posibles problemas y potencialidades productivas.
 
-La siguiente tabla presenta los indicadores obtenidos a partir de los microdatos de ENESEM 2019.
+## Preparación de los datos
 
 ```{r}
-#| label: tbl-diagnostico-sectorial
-#| echo: false
+#| label: preparar-datos-sectorial
+#| include: false
+#| warning: false
 #| message: false
-#| tbl-cap: "Horas trabajadas y productividad laboral por sector económico, Ecuador 2019"
 
-tabla <- readRDS(
-  "datos/procesados/diagnostico_sectorial_2019.rds"
+if (!requireNamespace("ggplot2", quietly = TRUE)) {
+  stop("Instala ggplot2 con install.packages('ggplot2').")
+}
+
+library(ggplot2)
+
+# Cargar base procesada
+ruta_base <- "datos/procesados/base_estudio.rds"
+
+if (!file.exists(ruta_base)) {
+  stop("No se encuentra la base_estudio.rds.")
+}
+
+base_estudio <- readRDS(ruta_base)
+
+# Comprobar variables necesarias
+variables <- c(
+  "sector",
+  "horas_anuales",
+  "valor_agregado",
+  "personal_ocupado",
+  "factor_expansion"
+)
+
+if (!all(variables %in% names(base_estudio))) {
+  stop("Faltan variables necesarias en la base.")
+}
+
+# Replicar el tratamiento del diagnostico sectorial
+# Se conserva el valor agregado negativo o cero
+
+base_1 <- subset(
+  base_estudio,
+  !is.na(sector) &
+    trimws(as.character(sector)) != "" &
+    is.finite(horas_anuales) &
+    is.finite(valor_agregado) &
+    is.finite(personal_ocupado) &
+    is.finite(factor_expansion) &
+    horas_anuales > 0 &
+    personal_ocupado > 0 &
+    factor_expansion > 0
+)
+
+# Definir sectores
+sectores <- c(
+  "Comercio",
+  "Construcción",
+  "Manufactura",
+  "Minería",
+  "Servicios"
+)
+
+base_1$sector <- factor(
+  as.character(base_1$sector),
+  levels = sectores
+)
+
+if (anyNA(base_1$sector)) {
+  stop("Existen sectores no contemplados.")
+}
+
+# Indicadores individuales por empresa
+base_1$horas_por_trabajador <-
+  base_1$horas_anuales /
+  base_1$personal_ocupado
+
+base_1$productividad_por_trabajador <-
+  base_1$valor_agregado /
+  base_1$personal_ocupado
+
+# Formato numerico español
+num_es <- function(x, decimales = 1) {
+  formatC(
+    x,
+    format = "f",
+    digits = decimales,
+    big.mark = ".",
+    decimal.mark = ","
+  )
+}
+
+etiquetas_es <- function(x) {
+  format(
+    round(x),
+    big.mark = ".",
+    decimal.mark = ",",
+    scientific = FALSE,
+    trim = TRUE
+  )
+}
+```
+
+Se trabaja con **`r nrow(base_1)` empresas** que cuentan con información válida sobre horas trabajadas, valor agregado, personal ocupado, sector económico y factor de expansión.
+
+El tratamiento conserva las observaciones con valor agregado negativo o igual a cero. Los indicadores sectoriales agregados se calculan como cocientes entre totales expandidos mediante el factor de expansión de ENESEM 2019.
+
+## Distribución de empresas por sector económico
+
+La distribución de observaciones permite caracterizar la composición sectorial de la muestra y contextualizar las comparaciones posteriores.
+
+```{r}
+#| label: tbl-distribucion
+#| echo: false
+#| warning: false
+#| message: false
+#| tbl-cap: "Distribución de empresas de la muestra por sector económico, ENESEM 2019"
+
+frecuencias <- table(base_1$sector)
+
+tabla_1 <- data.frame(
+  Sector = names(frecuencias),
+  Empresas = as.integer(frecuencias),
+  Porcentaje = 100 *
+    as.integer(frecuencias) / nrow(base_1)
 )
 
 knitr::kable(
-  tabla,
-  digits = 2,
-  col.names = c(
-    "Sector económico",
-    "Empresas en la muestra",
-    "Horas anuales por trabajador",
-    "Productividad (USD/trabajador)"
-  )
+  data.frame(
+    "Sector económico" = tabla_1$Sector,
+    "Empresas" = tabla_1$Empresas,
+    "Porcentaje de la muestra (%)" =
+      num_es(tabla_1$Porcentaje, 2),
+    check.names = FALSE
+  ),
+  align = c("l", "r", "r")
 )
 ```
 
-*Fuente: Elaboración propia a partir de ENESEM 2019, INEC.*
+El comercio concentra `r tabla_1$Empresas[tabla_1$Sector == "Comercio"]` empresas, equivalentes al `r num_es(tabla_1$Porcentaje[tabla_1$Sector == "Comercio"], 1)` % de los registros válidos.
 
-## Análisis de los resultados
+Le siguen los servicios, con una participación del `r num_es(tabla_1$Porcentaje[tabla_1$Sector == "Servicios"], 1)` %, mientras que la minería presenta la menor participación en el número de empresas observadas.
 
-Los resultados muestran diferencias importantes entre los sectores económicos analizados.
+Esta distribución refleja diferencias en la composición sectorial de la muestra y resulta relevante para interpretar los indicadores productivos.
 
-La minería registra la mayor productividad laboral, con aproximadamente USD 181.087,91 de valor agregado por trabajador, acompañada de 2.700,6 horas anuales por persona ocupada.
+**Nota:** los porcentajes corresponden a las empresas observadas en la muestra y no representan participaciones expandidas del universo empresarial.
 
-Por su parte, el sector servicios presenta una productividad de USD 28.056,15 por trabajador y registra 2.573,8 horas anuales, el menor promedio de horas entre los cinco sectores.
+## Horas trabajadas y productividad agregada
 
-La manufactura presenta una productividad de USD 23.719,46 por trabajador, pese a registrar 2.689,2 horas anuales.
+Para comparar el desempeño económico de los sectores se utilizan dos indicadores.
 
-Estos resultados muestran que las diferencias de productividad entre sectores no siguen una relación uniforme con las horas trabajadas.
+Las horas anuales trabajadas por persona ocupada se calculan mediante:
 
-No obstante, la productividad puede estar relacionada con características como la intensidad de capital, la tecnología utilizada y la composición de las actividades económicas.
+$$
+H_s =
+\frac{\sum_{i \in s} h_i f_i}
+{\sum_{i \in s} n_i f_i}
+$$
 
-Por tanto, las diferencias observadas constituyen evidencia descriptiva y no permiten establecer que una mayor o menor jornada laboral provoque cambios en la productividad.
+La productividad laboral agregada se calcula como:
 
-## Consideraciones del diagnóstico
+$$
+P_s =
+\frac{\sum_{i \in s} VA_i f_i}
+{\sum_{i \in s} n_i f_i}
+$$
 
-Los indicadores sectoriales fueron calculados utilizando el factor de expansión de ENESEM 2019 y considerando empresas con información válida sobre horas trabajadas, valor agregado y personal ocupado.
+Donde:
 
-Los resultados corresponden a las actividades y empresas comprendidas en la cobertura de la encuesta. No representan necesariamente al conjunto de unidades productivas del Ecuador.
+- $H_s$: horas anuales trabajadas por persona ocupada del sector $s$.
+- $P_s$: valor agregado por persona ocupada del sector $s$.
+- $h_i$: horas anuales trabajadas de la empresa $i$.
+- $VA_i$: valor agregado de la empresa $i$.
+- $n_i$: personal ocupado de la empresa $i$.
+- $f_i$: factor de expansión correspondiente a la empresa $i$.
 
-Asimismo, las horas anuales por persona ocupada requieren una revisión adicional de su definición metodológica antes de compararlas directamente con las jornadas laborales legales.
+Los indicadores se calculan mediante cocientes entre totales ponderados, evitando confundirlos con el promedio simple de los indicadores individuales de las empresas.
+
+```{r}
+#| label: tbl-indicadores
+#| echo: false
+#| warning: false
+#| message: false
+#| tbl-cap: "Horas anuales por trabajador y productividad laboral agregada según sector, ENESEM 2019"
+
+tabla_2 <- do.call(
+  rbind,
+  lapply(
+    split(base_1, base_1$sector),
+    function(d) {
+
+      personal_expandido <- sum(
+        d$personal_ocupado *
+          d$factor_expansion
+      )
+
+      data.frame(
+        Sector = as.character(d$sector[1]),
+        Empresas = nrow(d),
+
+        Horas = sum(
+          d$horas_anuales *
+            d$factor_expansion
+        ) / personal_expandido,
+
+        Productividad = sum(
+          d$valor_agregado *
+            d$factor_expansion
+        ) / personal_expandido
+      )
+    }
+  )
+)
+
+rownames(tabla_2) <- NULL
+
+knitr::kable(
+  data.frame(
+    "Sector económico" = tabla_2$Sector,
+    "Empresas" = tabla_2$Empresas,
+    "Horas anuales por trabajador" =
+      num_es(tabla_2$Horas, 1),
+    "Productividad (USD/trabajador)" =
+      num_es(tabla_2$Productividad, 2),
+    check.names = FALSE
+  ),
+  align = c("l", "r", "r", "r")
+)
+```
+
+La minería registra la mayor productividad agregada, con USD `r num_es(tabla_2$Productividad[tabla_2$Sector == "Minería"], 2)` por trabajador, y también presenta el indicador más elevado de horas anuales por persona ocupada.
+
+En contraste, los servicios registran la menor cantidad de horas trabajadas, con `r num_es(tabla_2$Horas[tabla_2$Sector == "Servicios"], 1)` horas anuales por trabajador.
+
+Estas diferencias muestran que los niveles de productividad sectorial no siguen una relación uniforme con la cantidad de horas trabajadas.
+
+No obstante, las diferencias de valor agregado por trabajador pueden responder también a factores como la intensidad de capital, la tecnología, la organización empresarial y la composición de las actividades productivas.
+
+### Consideración metodológica sobre las horas anuales
+
+El indicador de horas por trabajador se construye a partir de la variable `hanuales` de ENESEM 2019, dividida para el personal ocupado registrado por la empresa.
+
+Antes de comparar estos resultados con la jornada laboral legal ecuatoriana, es necesario verificar en la documentación metodológica del INEC la construcción exacta de `hanuales`, los tipos de horas incluidos y su relación con las categorías de personal ocupado.
+
+Por tanto, **las horas anuales por persona ocupada se interpretan como un indicador estadístico de utilización del trabajo y no como una medición directa de la jornada contractual de cada trabajador**.
+
+## Comparación gráfica de las horas trabajadas
+
+El siguiente gráfico permite visualizar las diferencias en el tiempo de trabajo entre sectores económicos.
+
+```{r}
+#| label: fig-horas-sector
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-cap: "Horas anuales por trabajador según sector económico, ENESEM 2019"
+#| fig-width: 8
+#| fig-height: 4.5
+
+ggplot(
+  tabla_2,
+  aes(
+    x = Sector,
+    y = Horas,
+    fill = Sector
+  )
+) +
+  geom_col(width = 0.7) +
+  scale_y_continuous(
+    labels = etiquetas_es,
+    expand = expansion(mult = c(0, 0.1))
+  ) +
+  labs(
+    x = "Sector económico",
+    y = "Horas anuales por trabajador"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(
+      angle = 25,
+      hjust = 1
+    )
+  )
+```
+
+Las horas anuales por trabajador presentan valores relativamente cercanos entre los cinco sectores.
+
+La minería registra el valor más elevado, mientras que los servicios presentan el menor, con una diferencia de `r num_es(max(tabla_2$Horas) - min(tabla_2$Horas), 1)` horas al año.
+
+Esta comparación describe diferencias sectoriales en la utilización del tiempo de trabajo, sin establecer sus causas.
+
+## Comparación gráfica de la productividad laboral
+
+El valor agregado por persona ocupada permite examinar las diferencias en la productividad agregada entre sectores.
+
+```{r}
+#| label: fig-productividad-sector
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-cap: "Valor agregado por trabajador según sector económico, ENESEM 2019"
+#| fig-width: 8
+#| fig-height: 4.5
+
+ggplot(
+  tabla_2,
+  aes(
+    x = Sector,
+    y = Productividad,
+    fill = Sector
+  )
+) +
+  geom_col(width = 0.7) +
+  scale_y_continuous(
+    labels = etiquetas_es,
+    expand = expansion(mult = c(0, 0.1))
+  ) +
+  labs(
+    x = "Sector económico",
+    y = "Valor agregado por trabajador (USD)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(
+      angle = 25,
+      hjust = 1
+    )
+  )
+```
+
+La productividad agregada de la minería destaca considerablemente frente a los demás sectores económicos.
+
+Comercio, construcción, manufactura y servicios registran niveles mucho más próximos entre sí.
+
+La marcada diferencia de productividad minera puede estar relacionada con la intensidad de capital, la escala de operaciones y las características específicas de la actividad económica.
+
+Por consiguiente, una mayor productividad agregada no implica necesariamente una mayor eficiencia individual de los trabajadores.
+
+## Distribución de los indicadores entre empresas
+
+Los indicadores agregados permiten caracterizar el desempeño sectorial, pero no muestran completamente las diferencias existentes entre las empresas de una misma actividad económica.
+
+Para complementar el diagnóstico se calculan la mediana, la desviación estándar y los percentiles 25 y 75 de las horas trabajadas y de la productividad laboral individual.
+
+A diferencia de los indicadores agregados anteriores, estas estadísticas describen las observaciones empresariales de la muestra **sin aplicar ponderaciones**.
+
+Por ello, la mediana representa una empresa típica de la muestra y no debe confundirse con el cociente entre los totales ponderados de un sector.
+
+```{r}
+#| label: tbl-dispersion
+#| echo: false
+#| warning: false
+#| message: false
+#| tbl-cap: "Mediana, desviación estándar y cuartiles de horas y productividad laboral por sector, ENESEM 2019"
+
+tabla_3 <- do.call(
+  rbind,
+  lapply(
+    split(base_1, base_1$sector),
+    function(d) {
+
+      do.call(
+        rbind,
+        lapply(
+          c(
+            "horas_por_trabajador",
+            "productividad_por_trabajador"
+          ),
+          function(v) {
+
+            x <- d[[v]]
+
+            data.frame(
+              Sector = as.character(d$sector[1]),
+
+              Indicador = if (
+                v == "horas_por_trabajador"
+              ) {
+                "Horas por trabajador"
+              } else {
+                "Productividad (USD)"
+              },
+
+              Mediana = median(x),
+              Desviacion = sd(x),
+
+              P25 = unname(
+                quantile(x, 0.25)
+              ),
+
+              P75 = unname(
+                quantile(x, 0.75)
+              )
+            )
+          }
+        )
+      )
+    }
+  )
+)
+
+rownames(tabla_3) <- NULL
+
+# Identificar mayor dispersion central
+filas_horas <-
+  tabla_3$Indicador == "Horas por trabajador"
+
+filas_productividad <-
+  tabla_3$Indicador == "Productividad (USD)"
+
+sector_dispersion_horas <-
+  tabla_3$Sector[filas_horas][
+    which.max(
+      tabla_3$P75[filas_horas] -
+        tabla_3$P25[filas_horas]
+    )
+  ]
+
+sector_dispersion_productividad <-
+  tabla_3$Sector[filas_productividad][
+    which.max(
+      tabla_3$P75[filas_productividad] -
+        tabla_3$P25[filas_productividad]
+    )
+  ]
+
+knitr::kable(
+  data.frame(
+    Sector = tabla_3$Sector,
+    Indicador = tabla_3$Indicador,
+    Mediana = num_es(tabla_3$Mediana, 1),
+
+    "Desviación estándar" =
+      num_es(tabla_3$Desviacion, 1),
+
+    "Percentil 25" =
+      num_es(tabla_3$P25, 1),
+
+    "Percentil 75" =
+      num_es(tabla_3$P75, 1),
+
+    check.names = FALSE
+  ),
+  align = c("l", "l", "r", "r", "r", "r")
+)
+```
+
+Las medianas y los percentiles permiten identificar diferencias importantes entre las empresas de un mismo sector económico.
+
+En minería, la mediana de productividad es de USD `r num_es(tabla_3$Mediana[tabla_3$Sector == "Minería" & tabla_3$Indicador == "Productividad (USD)"], 1)` por trabajador, un valor considerablemente inferior al indicador agregado sectorial.
+
+Esta diferencia requiere una interpretación cuidadosa, dado que la mediana empresarial y la productividad calculada mediante totales ponderados representan medidas estadísticas distintas.
+
+La desviación estándar complementa el análisis, aunque puede verse afectada por observaciones extremas, particularmente en actividades con empresas de gran escala.
+
+## Distribución de las horas trabajadas
+
+Los diagramas de caja permiten examinar la dispersión, los valores centrales y las diferencias entre empresas de un mismo sector.
+
+```{r}
+#| label: fig-caja-horas
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-cap: "Distribución de horas anuales por trabajador según sector económico, ENESEM 2019"
+#| fig-width: 8
+#| fig-height: 4.7
+
+lim_horas <- as.numeric(
+  quantile(
+    base_1$horas_por_trabajador,
+    c(0.01, 0.99)
+  )
+)
+
+ggplot(
+  base_1,
+  aes(
+    x = sector,
+    y = horas_por_trabajador,
+    fill = sector
+  )
+) +
+  geom_boxplot(outlier.shape = NA) +
+  coord_cartesian(ylim = lim_horas) +
+  scale_y_continuous(
+    labels = etiquetas_es
+  ) +
+  labs(
+    x = "Sector económico",
+    y = "Horas anuales por trabajador"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(
+      angle = 25,
+      hjust = 1
+    )
+  )
+```
+
+El diagrama permite observar que existen diferencias en la distribución de las horas anuales trabajadas entre las empresas de cada sector.
+
+El sector `r sector_dispersion_horas` presenta la mayor amplitud entre los percentiles 25 y 75, lo que refleja una mayor dispersión central de las horas registradas por persona ocupada.
+
+La visualización se limita al intervalo comprendido entre los percentiles globales 1 y 99 para facilitar su lectura.
+
+Esta limitación es exclusivamente gráfica y no representa una eliminación de observaciones de los cálculos.
+
+## Distribución de la productividad laboral
+
+La productividad empresarial puede presentar diferencias considerables incluso dentro de un mismo sector económico.
+
+Para examinar esta heterogeneidad, se utiliza un segundo diagrama de caja.
+
+```{r}
+#| label: fig-caja-productividad
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-cap: "Distribución de productividad laboral por empresa y sector, ENESEM 2019"
+#| fig-width: 8
+#| fig-height: 4.7
+
+lim_productividad <- as.numeric(
+  quantile(
+    base_1$productividad_por_trabajador,
+    c(0.01, 0.95)
+  )
+)
+
+ggplot(
+  base_1,
+  aes(
+    x = sector,
+    y = productividad_por_trabajador,
+    fill = sector
+  )
+) +
+  geom_boxplot(outlier.shape = NA) +
+  coord_cartesian(
+    ylim = lim_productividad
+  ) +
+  scale_y_continuous(
+    labels = etiquetas_es
+  ) +
+  labs(
+    x = "Sector económico",
+    y = "Valor agregado por trabajador (USD)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(
+      angle = 25,
+      hjust = 1
+    )
+  )
+```
+
+La distribución de la productividad muestra diferencias entre empresas, incluso dentro de una misma actividad económica.
+
+El sector `r sector_dispersion_productividad` registra el mayor rango intercuartílico de productividad laboral.
+
+Estas diferencias permiten comprender por qué los indicadores agregados pueden apartarse considerablemente de los valores observados en una empresa típica.
+
+Asimismo, reflejan la importancia de considerar la heterogeneidad empresarial antes de formular conclusiones generales sobre la productividad de cada sector.
+
+**Nota:** el gráfico utiliza una ventana visual comprendida entre los percentiles globales 1 y 95 para facilitar la comparación. Esta decisión no elimina registros ni modifica los resultados calculados. Los valores negativos o iguales a cero de productividad se conservaron cuando cumplían los criterios de validez definidos.
+
+## Síntesis del diagnóstico sectorial
+
+El diagnóstico sectorial de ENESEM 2019 evidencia diferencias relevantes en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas.
+
+La minería presenta el mayor nivel agregado de valor agregado por persona ocupada, mientras que las actividades de comercio, construcción, manufactura y servicios registran valores considerablemente inferiores.
+
+Sin embargo, las diferencias de productividad entre sectores no siguen una correspondencia uniforme con las horas trabajadas.
+
+Adicionalmente, el análisis de las distribuciones individuales evidencia una heterogeneidad importante dentro de cada sector, particularmente en los indicadores de productividad.
+
+Estos resultados permiten identificar posibles diferencias productivas que serán examinadas posteriormente en los apartados de diagnóstico territorial, problemas y potencialidades, y evidencia correlacional.
+
+En términos metodológicos, las comparaciones presentadas son descriptivas y no permiten atribuir las diferencias de productividad exclusivamente a la duración del tiempo de trabajo.
+
+Tampoco constituyen evidencia causal de que aumentar o reducir las horas laborales produzca cambios en el valor agregado generado por las empresas.
+
+*Fuente de las tablas y gráficos: Elaboración propia a partir de los microdatos de ENESEM 2019, Instituto Nacional de Estadística y Censos (INEC), Ecuador.*

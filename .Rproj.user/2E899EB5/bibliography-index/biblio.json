@@ -48,6 +48,539 @@
             "title": "Working hours and productivity",
             "type": "article-journal",
             "volume": "47"
+        },
+        {
+            "DOI": "10.1002/pam.22136",
+            "author": [
+                {
+                    "family": "Park",
+                    "given": "WooRam"
+                },
+                {
+                    "family": "Park",
+                    "given": "Yoonsoo"
+                }
+            ],
+            "container-title": "Journal of Policy Analysis and Management",
+            "id": "park2019",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "681-705",
+            "title": "When less is more: The impact of the regulation on standard workweek on labor productivity in south korea",
+            "title-short": "When less is more",
+            "type": "article-journal",
+            "volume": "38"
+        },
+        {
+            "DOI": "10.1016/S0014-4983(03)00016-0",
+            "author": [
+                {
+                    "family": "Atack",
+                    "given": "Jeremy"
+                },
+                {
+                    "family": "Bateman",
+                    "given": "Fred"
+                },
+                {
+                    "family": "Margo",
+                    "given": "Robert A."
+                }
+            ],
+            "container-title": "Explorations in Economic History",
+            "id": "atack2003",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "page": "170-194",
+            "title": "Productivity in manufacturing and the length of the working day: Evidence from the 1880 census of manufactures",
+            "title-short": "Productivity in manufacturing and the length of the working day",
+            "type": "article-journal",
+            "volume": "40"
+        },
+        {
+            "DOI": "10.1111/irel.12323",
+            "author": [
+                {
+                    "family": "Batut",
+                    "given": "Cyprien"
+                },
+                {
+                    "family": "Garnero",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Tondini",
+                    "given": "Alessandro"
+                }
+            ],
+            "container-title": "Industrial Relations: A Journal of Economy and Society",
+            "id": "batut2023",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "217-232",
+            "title": "The employment effects of working time reductions: Sector-level evidence from european reforms",
+            "title-short": "The employment effects of working time reductions",
+            "type": "article-journal",
+            "volume": "62"
+        },
+        {
+            "DOI": "10.1111/iere.12769",
+            "author": [
+                {
+                    "family": "Shangguan",
+                    "given": "Ruo"
+                },
+                {
+                    "family": "DeVaro",
+                    "given": "Jed"
+                },
+                {
+                    "family": "Owan",
+                    "given": "Hideo"
+                }
+            ],
+            "container-title": "International Economic Review",
+            "id": "shangguan2025",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "1645-1664",
+            "title": "Productivity and working hours within teams of knowledge workers",
+            "type": "article-journal",
+            "volume": "66"
+        },
+        {
+            "DOI": "10.1111/sjoe.12429",
+            "author": [
+                {
+                    "family": "Eden",
+                    "given": "Maya"
+                }
+            ],
+            "container-title": "The Scandinavian Journal of Economics",
+            "id": "eden2021",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "940-965",
+            "title": "Time-inseparable labor productivity and the workweek",
+            "type": "article-journal",
+            "volume": "123"
+        },
+        {
+            "DOI": "10.1111/bjir.12695",
+            "author": [
+                {
+                    "family": "Boltz",
+                    "given": "Marie"
+                },
+                {
+                    "family": "Cockx",
+                    "given": "Bart"
+                },
+                {
+                    "family": "Diaz",
+                    "given": "Ana Maria"
+                },
+                {
+                    "family": "Salas",
+                    "given": "Luz Magdalena"
+                }
+            ],
+            "container-title": "British Journal of Industrial Relations",
+            "id": "boltz2023",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "159-187",
+            "title": "How does working-time flexibility affect workers’ productivity in a routine job? Evidence from a field experiment",
+            "type": "article-journal",
+            "volume": "61"
+        },
+        {
+            "DOI": "10.1177/10242589261460189",
+            "author": [
+                {
+                    "family": "Cette",
+                    "given": "Gilbert"
+                },
+                {
+                    "family": "Drapala",
+                    "given": "Simon"
+                },
+                {
+                    "family": "Lopez",
+                    "given": "Jimmy"
+                }
+            ],
+            "container-title": "Transfer: European Review of Labour and Research",
+            "id": "cette2026",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "title": "Hours worked, productivity and unemployment",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1016/j.jedc.2023.104696",
+            "author": [
+                {
+                    "family": "Shao",
+                    "given": "Lin"
+                },
+                {
+                    "family": "Sohail",
+                    "given": "Faisal"
+                },
+                {
+                    "family": "Yurdagul",
+                    "given": "Emircan"
+                }
+            ],
+            "container-title": "Journal of Economic Dynamics and Control",
+            "id": "shao2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "104696",
+            "title": "Are working hours complements in production?",
+            "type": "article-journal",
+            "volume": "153"
+        },
+        {
+            "DOI": "10.1016/j.jebo.2025.107209",
+            "author": [
+                {
+                    "family": "DeVaro",
+                    "given": "Jed"
+                }
+            ],
+            "container-title": "Journal of Economic Behavior and Organization",
+            "id": "devaro2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "107209",
+            "title": "Work schedules",
+            "type": "article-journal",
+            "volume": "238"
+        },
+        {
+            "DOI": "10.1108/01437720010378999",
+            "author": [
+                {
+                    "family": "Shepard",
+                    "given": "Edward"
+                },
+                {
+                    "family": "Clifton",
+                    "given": "Thomas"
+                }
+            ],
+            "container-title": "International Journal of Manpower",
+            "id": "shepard2000",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "page": "540-553",
+            "title": "Are longer hours reducing productivity in manufacturing?",
+            "type": "article-journal",
+            "volume": "21"
+        },
+        {
+            "DOI": "10.1093/icc/dtx037",
+            "author": [
+                {
+                    "family": "Devicienti",
+                    "given": "Francesco"
+                },
+                {
+                    "family": "Grinza",
+                    "given": "Elena"
+                },
+                {
+                    "family": "Vannoni",
+                    "given": "Davide"
+                }
+            ],
+            "container-title": "Industrial and Corporate Change",
+            "id": "devicienti2018",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "321-347",
+            "title": "The impact of part-time work on firm productivity: Evidence from italy",
+            "title-short": "The impact of part-time work on firm productivity",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1002/job.2847",
+            "author": [
+                {
+                    "dropping-particle": "ten",
+                    "family": "Brummelhuis",
+                    "given": "L."
+                },
+                {
+                    "family": "Calderwood",
+                    "given": "C."
+                },
+                {
+                    "family": "Rosen",
+                    "given": "C."
+                },
+                {
+                    "family": "Gabriel",
+                    "given": "A."
+                }
+            ],
+            "container-title": "Journal of Organizational Behavior",
+            "id": "tenbrummelhuis2025",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "530-547",
+            "title": "Peaking today, taking it easy tomorrow: Daily performance dynamics of working long hours",
+            "title-short": "Peaking today, taking it easy tomorrow",
+            "type": "article-journal",
+            "volume": "46"
+        },
+        {
+            "DOI": "10.1080/1359432X.2024.2379061",
+            "author": [
+                {
+                    "family": "Mühl",
+                    "given": "Arabella"
+                },
+                {
+                    "family": "Korunka",
+                    "given": "Christian"
+                }
+            ],
+            "container-title": "European Journal of Work and Organizational Psychology",
+            "id": "muhl2024",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "703-711",
+            "title": "You get what you expect: Assessing the effect of a compressed work schedule on time pressure, fatigue, perceived productivity, and work-life balance",
+            "title-short": "You get what you expect",
+            "type": "article-journal",
+            "volume": "33"
+        },
+        {
+            "DOI": "10.1016/j.labeco.2022.102295",
+            "author": [
+                {
+                    "family": "Deole",
+                    "given": "Sumit S."
+                },
+                {
+                    "family": "Deter",
+                    "given": "Max"
+                },
+                {
+                    "family": "Huang",
+                    "given": "Yue"
+                }
+            ],
+            "container-title": "Labour Economics",
+            "id": "deole2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "102295",
+            "title": "Home sweet home: Working from home and employee performance during the COVID-19 pandemic in the UK",
+            "title-short": "Home sweet home",
+            "type": "article-journal",
+            "volume": "80"
+        },
+        {
+            "DOI": "10.1093/qje/qju032",
+            "author": [
+                {
+                    "family": "Bloom",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Liang",
+                    "given": "James"
+                },
+                {
+                    "family": "Roberts",
+                    "given": "John"
+                },
+                {
+                    "family": "Ying",
+                    "given": "Zhichun Jenny"
+                }
+            ],
+            "container-title": "The Quarterly Journal of Economics",
+            "id": "bloom2015",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "165-218",
+            "title": "Does working from home work? Evidence from a chinese experiment",
+            "type": "article-journal",
+            "volume": "130"
+        },
+        {
+            "DOI": "10.2307/3440088",
+            "author": [
+                {
+                    "family": "Anxo",
+                    "given": "Dominique"
+                },
+                {
+                    "family": "Bigsten",
+                    "given": "Arne"
+                }
+            ],
+            "container-title": "The Scandinavian Journal of Economics",
+            "id": "anxo1989",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1989
+                    ]
+                ]
+            },
+            "page": "613-619",
+            "title": "Working hours and productivity in swedish manufacturing",
+            "type": "article-journal",
+            "volume": "91"
+        },
+        {
+            "DOI": "10.1016/j.labeco.2025.102694",
+            "author": [
+                {
+                    "family": "Clemens",
+                    "given": "Marco"
+                },
+                {
+                    "family": "Sauermann",
+                    "given": "Jan"
+                }
+            ],
+            "container-title": "Labour Economics",
+            "id": "clemens2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "102694",
+            "title": "Making the right call: The heterogeneous effects of individual performance pay on productivity",
+            "title-short": "Making the right call",
+            "type": "article-journal",
+            "volume": "94"
+        },
+        {
+            "DOI": "10.1177/001979391206500203",
+            "author": [
+                {
+                    "family": "Böckerman",
+                    "given": "Petri"
+                },
+                {
+                    "family": "Ilmakunnas",
+                    "given": "Pekka"
+                }
+            ],
+            "container-title": "ILR Review",
+            "id": "bockerman2012",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "page": "244-262",
+            "title": "The job satisfaction-productivity nexus: A study using matched survey and register data",
+            "title-short": "The job satisfaction-productivity nexus",
+            "type": "article-journal",
+            "volume": "65"
         }
     ],
     "project_biblios": [

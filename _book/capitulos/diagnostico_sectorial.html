@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Diagnóstico sectorial – Horas de trabajo y productividad laboral en las empresas ecuatorianas</title>
+<title>4&nbsp; Diagnóstico sectorial – Horas de trabajo y productividad laboral en las empresas ecuatorianas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -88,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/diagnostico_sectorial.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/diagnostico_sectorial.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -127,38 +156,38 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../capitulos/revision_literatura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Revisión de literatura</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../capitulos/datos_variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datos y variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datos y variables</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/diagnostico_sectorial.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/diagnostico_territorial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diagnóstico territorial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diagnóstico territorial</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/problemas_potencialidades.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas y potencialidades productivas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Problemas y potencialidades productivas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/evidencia_correlacional.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Evidencia empírica correlacional</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../capitulos/revision_literatura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Revisión de literatura</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evidencia empírica correlacional</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,10 +206,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#caracterización-de-los-sectores-económicos" id="toc-caracterización-de-los-sectores-económicos" class="nav-link active" data-scroll-target="#caracterización-de-los-sectores-económicos"><span class="header-section-number">3.1</span> Caracterización de los sectores económicos</a></li>
-  <li><a href="#horas-trabajadas-y-productividad-laboral-por-sector" id="toc-horas-trabajadas-y-productividad-laboral-por-sector" class="nav-link" data-scroll-target="#horas-trabajadas-y-productividad-laboral-por-sector"><span class="header-section-number">3.2</span> Horas trabajadas y productividad laboral por sector</a></li>
-  <li><a href="#análisis-de-los-resultados" id="toc-análisis-de-los-resultados" class="nav-link" data-scroll-target="#análisis-de-los-resultados"><span class="header-section-number">3.3</span> Análisis de los resultados</a></li>
-  <li><a href="#consideraciones-del-diagnóstico" id="toc-consideraciones-del-diagnóstico" class="nav-link" data-scroll-target="#consideraciones-del-diagnóstico"><span class="header-section-number">3.4</span> Consideraciones del diagnóstico</a></li>
+  <li><a href="#objetivo-y-alcance" id="toc-objetivo-y-alcance" class="nav-link active" data-scroll-target="#objetivo-y-alcance"><span class="header-section-number">4.1</span> Objetivo y alcance</a></li>
+  <li><a href="#preparación-de-los-datos" id="toc-preparación-de-los-datos" class="nav-link" data-scroll-target="#preparación-de-los-datos"><span class="header-section-number">4.2</span> Preparación de los datos</a></li>
+  <li><a href="#distribución-de-empresas-por-sector-económico" id="toc-distribución-de-empresas-por-sector-económico" class="nav-link" data-scroll-target="#distribución-de-empresas-por-sector-económico"><span class="header-section-number">4.3</span> Distribución de empresas por sector económico</a></li>
+  <li><a href="#horas-trabajadas-y-productividad-agregada" id="toc-horas-trabajadas-y-productividad-agregada" class="nav-link" data-scroll-target="#horas-trabajadas-y-productividad-agregada"><span class="header-section-number">4.4</span> Horas trabajadas y productividad agregada</a>
+  <ul class="collapse">
+  <li><a href="#consideración-metodológica-sobre-las-horas-anuales" id="toc-consideración-metodológica-sobre-las-horas-anuales" class="nav-link" data-scroll-target="#consideración-metodológica-sobre-las-horas-anuales"><span class="header-section-number">4.4.1</span> Consideración metodológica sobre las horas anuales</a></li>
+  </ul></li>
+  <li><a href="#comparación-gráfica-de-las-horas-trabajadas" id="toc-comparación-gráfica-de-las-horas-trabajadas" class="nav-link" data-scroll-target="#comparación-gráfica-de-las-horas-trabajadas"><span class="header-section-number">4.5</span> Comparación gráfica de las horas trabajadas</a></li>
+  <li><a href="#comparación-gráfica-de-la-productividad-laboral" id="toc-comparación-gráfica-de-la-productividad-laboral" class="nav-link" data-scroll-target="#comparación-gráfica-de-la-productividad-laboral"><span class="header-section-number">4.6</span> Comparación gráfica de la productividad laboral</a></li>
+  <li><a href="#distribución-de-los-indicadores-entre-empresas" id="toc-distribución-de-los-indicadores-entre-empresas" class="nav-link" data-scroll-target="#distribución-de-los-indicadores-entre-empresas"><span class="header-section-number">4.7</span> Distribución de los indicadores entre empresas</a></li>
+  <li><a href="#distribución-de-las-horas-trabajadas" id="toc-distribución-de-las-horas-trabajadas" class="nav-link" data-scroll-target="#distribución-de-las-horas-trabajadas"><span class="header-section-number">4.8</span> Distribución de las horas trabajadas</a></li>
+  <li><a href="#distribución-de-la-productividad-laboral" id="toc-distribución-de-la-productividad-laboral" class="nav-link" data-scroll-target="#distribución-de-la-productividad-laboral"><span class="header-section-number">4.9</span> Distribución de la productividad laboral</a></li>
+  <li><a href="#síntesis-del-diagnóstico-sectorial" id="toc-síntesis-del-diagnóstico-sectorial" class="nav-link" data-scroll-target="#síntesis-del-diagnóstico-sectorial"><span class="header-section-number">4.10</span> Síntesis del diagnóstico sectorial</a></li>
   </ul>
 </nav>
     </div>
@@ -189,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diagnóstico sectorial</span></h1>
 </div>
 
 
@@ -206,68 +244,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="caracterización-de-los-sectores-económicos" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="caracterización-de-los-sectores-económicos"><span class="header-section-number">3.1</span> Caracterización de los sectores económicos</h2>
-<p>El diagnóstico sectorial examina las diferencias en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas incluidas en la Encuesta Estructural Empresarial (ENESEM) 2019.</p>
-<p>El análisis comprende cinco sectores económicos: comercio, construcción, manufactura, minería y servicios.</p>
-<p>La productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. Las horas de trabajo se expresan como horas anuales por persona ocupada.</p>
+<section id="objetivo-y-alcance" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="objetivo-y-alcance"><span class="header-section-number">4.1</span> Objetivo y alcance</h2>
+<p><strong>Caracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.</strong></p>
+<p>El análisis examina cinco sectores económicos: comercio, construcción, manufactura, minería y servicios. Para ello, se utilizan los microdatos procesados de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) del Ecuador.</p>
+<p>La productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. La intensidad del trabajo se aproxima mediante las horas anuales trabajadas por persona ocupada.</p>
+<p>El diagnóstico permite identificar diferencias sectoriales, examinar la distribución de los indicadores entre empresas y reconocer posibles problemas y potencialidades productivas.</p>
 </section>
-<section id="horas-trabajadas-y-productividad-laboral-por-sector" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="horas-trabajadas-y-productividad-laboral-por-sector"><span class="header-section-number">3.2</span> Horas trabajadas y productividad laboral por sector</h2>
-<p>La siguiente tabla presenta los indicadores obtenidos a partir de los microdatos de ENESEM 2019.</p>
+<section id="preparación-de-los-datos" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="preparación-de-los-datos"><span class="header-section-number">4.2</span> Preparación de los datos</h2>
+<p>Se trabaja con <strong>3677 empresas</strong> que cuentan con información válida sobre horas trabajadas, valor agregado, personal ocupado, sector económico y factor de expansión.</p>
+<p>El tratamiento conserva las observaciones con valor agregado negativo o igual a cero. Los indicadores sectoriales agregados se calculan como cocientes entre totales expandidos mediante el factor de expansión de ENESEM 2019.</p>
+</section>
+<section id="distribución-de-empresas-por-sector-económico" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="distribución-de-empresas-por-sector-económico"><span class="header-section-number">4.3</span> Distribución de empresas por sector económico</h2>
+<p>La distribución de observaciones permite caracterizar la composición sectorial de la muestra y contextualizar las comparaciones posteriores.</p>
 <div class="cell">
-<div id="tbl-diagnostico-sectorial" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-distribucion" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diagnostico-sectorial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabla&nbsp;3.1: Horas trabajadas y productividad laboral por sector económico, Ecuador 2019
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-distribucion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.1: Distribución de empresas de la muestra por sector económico, ENESEM 2019
 </figcaption>
-<div aria-describedby="tbl-diagnostico-sectorial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-distribucion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="cell caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 17%">
-<col style="width: 23%">
-<col style="width: 28%">
-<col style="width: 31%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Sector económico</th>
-<th style="text-align: right;">Empresas en la muestra</th>
-<th style="text-align: right;">Horas anuales por trabajador</th>
-<th style="text-align: right;">Productividad (USD/trabajador)</th>
+<th style="text-align: right;">Empresas</th>
+<th style="text-align: right;">Porcentaje de la muestra (%)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Comercio</td>
 <td style="text-align: right;">1569</td>
-<td style="text-align: right;">2611.4</td>
-<td style="text-align: right;">25589.60</td>
+<td style="text-align: right;">42,67</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Construcción</td>
 <td style="text-align: right;">208</td>
-<td style="text-align: right;">2595.3</td>
-<td style="text-align: right;">24479.57</td>
+<td style="text-align: right;">5,66</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Manufactura</td>
 <td style="text-align: right;">718</td>
-<td style="text-align: right;">2689.2</td>
-<td style="text-align: right;">23719.46</td>
+<td style="text-align: right;">19,53</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Minería</td>
 <td style="text-align: right;">104</td>
-<td style="text-align: right;">2700.6</td>
-<td style="text-align: right;">181087.91</td>
+<td style="text-align: right;">2,83</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Servicios</td>
 <td style="text-align: right;">1078</td>
-<td style="text-align: right;">2573.8</td>
-<td style="text-align: right;">28056.15</td>
+<td style="text-align: right;">29,32</td>
 </tr>
 </tbody>
 </table>
@@ -276,23 +308,333 @@ Tabla&nbsp;3.1: Horas trabajadas y productividad laboral por sector económico, 
 </figure>
 </div>
 </div>
-<p><em>Fuente: Elaboración propia a partir de ENESEM 2019, INEC.</em></p>
+<p>El comercio concentra 1569 empresas, equivalentes al 42,7 % de los registros válidos.</p>
+<p>Le siguen los servicios, con una participación del 29,3 %, mientras que la minería presenta la menor participación en el número de empresas observadas.</p>
+<p>Esta distribución refleja diferencias en la composición sectorial de la muestra y resulta relevante para interpretar los indicadores productivos.</p>
+<p><strong>Nota:</strong> los porcentajes corresponden a las empresas observadas en la muestra y no representan participaciones expandidas del universo empresarial.</p>
 </section>
-<section id="análisis-de-los-resultados" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="análisis-de-los-resultados"><span class="header-section-number">3.3</span> Análisis de los resultados</h2>
-<p>Los resultados muestran diferencias importantes entre los sectores económicos analizados.</p>
-<p>La minería registra la mayor productividad laboral, con aproximadamente USD 181.087,91 de valor agregado por trabajador, acompañada de 2.700,6 horas anuales por persona ocupada.</p>
-<p>Por su parte, el sector servicios presenta una productividad de USD 28.056,15 por trabajador y registra 2.573,8 horas anuales, el menor promedio de horas entre los cinco sectores.</p>
-<p>La manufactura presenta una productividad de USD 23.719,46 por trabajador, pese a registrar 2.689,2 horas anuales.</p>
-<p>Estos resultados muestran que las diferencias de productividad entre sectores no siguen una relación uniforme con las horas trabajadas.</p>
-<p>No obstante, la productividad puede estar relacionada con características como la intensidad de capital, la tecnología utilizada y la composición de las actividades económicas.</p>
-<p>Por tanto, las diferencias observadas constituyen evidencia descriptiva y no permiten establecer que una mayor o menor jornada laboral provoque cambios en la productividad.</p>
+<section id="horas-trabajadas-y-productividad-agregada" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="horas-trabajadas-y-productividad-agregada"><span class="header-section-number">4.4</span> Horas trabajadas y productividad agregada</h2>
+<p>Para comparar el desempeño económico de los sectores se utilizan dos indicadores.</p>
+<p>Las horas anuales trabajadas por persona ocupada se calculan mediante:</p>
+<p><span class="math display">\[
+H_s =
+\frac{\sum_{i \in s} h_i f_i}
+{\sum_{i \in s} n_i f_i}
+\]</span></p>
+<p>La productividad laboral agregada se calcula como:</p>
+<p><span class="math display">\[
+P_s =
+\frac{\sum_{i \in s} VA_i f_i}
+{\sum_{i \in s} n_i f_i}
+\]</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(H_s\)</span>: horas anuales trabajadas por persona ocupada del sector <span class="math inline">\(s\)</span>.</li>
+<li><span class="math inline">\(P_s\)</span>: valor agregado por persona ocupada del sector <span class="math inline">\(s\)</span>.</li>
+<li><span class="math inline">\(h_i\)</span>: horas anuales trabajadas de la empresa <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">\(VA_i\)</span>: valor agregado de la empresa <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">\(n_i\)</span>: personal ocupado de la empresa <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">\(f_i\)</span>: factor de expansión correspondiente a la empresa <span class="math inline">\(i\)</span>.</li>
+</ul>
+<p>Los indicadores se calculan mediante cocientes entre totales ponderados, evitando confundirlos con el promedio simple de los indicadores individuales de las empresas.</p>
+<div class="cell">
+<div id="tbl-indicadores" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-indicadores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.2: Horas anuales por trabajador y productividad laboral agregada según sector, ENESEM 2019
+</figcaption>
+<div aria-describedby="tbl-indicadores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 10%">
+<col style="width: 33%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sector económico</th>
+<th style="text-align: right;">Empresas</th>
+<th style="text-align: right;">Horas anuales por trabajador</th>
+<th style="text-align: right;">Productividad (USD/trabajador)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Comercio</td>
+<td style="text-align: right;">1569</td>
+<td style="text-align: right;">2.611,4</td>
+<td style="text-align: right;">25.589,60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Construcción</td>
+<td style="text-align: right;">208</td>
+<td style="text-align: right;">2.595,3</td>
+<td style="text-align: right;">24.479,57</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Manufactura</td>
+<td style="text-align: right;">718</td>
+<td style="text-align: right;">2.689,2</td>
+<td style="text-align: right;">23.719,46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Minería</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">2.700,6</td>
+<td style="text-align: right;">181.087,91</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Servicios</td>
+<td style="text-align: right;">1078</td>
+<td style="text-align: right;">2.573,8</td>
+<td style="text-align: right;">28.056,15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>La minería registra la mayor productividad agregada, con USD 181.087,91 por trabajador, y también presenta el indicador más elevado de horas anuales por persona ocupada.</p>
+<p>En contraste, los servicios registran la menor cantidad de horas trabajadas, con 2.573,8 horas anuales por trabajador.</p>
+<p>Estas diferencias muestran que los niveles de productividad sectorial no siguen una relación uniforme con la cantidad de horas trabajadas.</p>
+<p>No obstante, las diferencias de valor agregado por trabajador pueden responder también a factores como la intensidad de capital, la tecnología, la organización empresarial y la composición de las actividades productivas.</p>
+<section id="consideración-metodológica-sobre-las-horas-anuales" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="consideración-metodológica-sobre-las-horas-anuales"><span class="header-section-number">4.4.1</span> Consideración metodológica sobre las horas anuales</h3>
+<p>El indicador de horas por trabajador se construye a partir de la variable <code>hanuales</code> de ENESEM 2019, dividida para el personal ocupado registrado por la empresa.</p>
+<p>Antes de comparar estos resultados con la jornada laboral legal ecuatoriana, es necesario verificar en la documentación metodológica del INEC la construcción exacta de <code>hanuales</code>, los tipos de horas incluidos y su relación con las categorías de personal ocupado.</p>
+<p>Por tanto, <strong>las horas anuales por persona ocupada se interpretan como un indicador estadístico de utilización del trabajo y no como una medición directa de la jornada contractual de cada trabajador</strong>.</p>
 </section>
-<section id="consideraciones-del-diagnóstico" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="consideraciones-del-diagnóstico"><span class="header-section-number">3.4</span> Consideraciones del diagnóstico</h2>
-<p>Los indicadores sectoriales fueron calculados utilizando el factor de expansión de ENESEM 2019 y considerando empresas con información válida sobre horas trabajadas, valor agregado y personal ocupado.</p>
-<p>Los resultados corresponden a las actividades y empresas comprendidas en la cobertura de la encuesta. No representan necesariamente al conjunto de unidades productivas del Ecuador.</p>
-<p>Asimismo, las horas anuales por persona ocupada requieren una revisión adicional de su definición metodológica antes de compararlas directamente con las jornadas laborales legales.</p>
+</section>
+<section id="comparación-gráfica-de-las-horas-trabajadas" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="comparación-gráfica-de-las-horas-trabajadas"><span class="header-section-number">4.5</span> Comparación gráfica de las horas trabajadas</h2>
+<p>El siguiente gráfico permite visualizar las diferencias en el tiempo de trabajo entre sectores económicos.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-horas-sector" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-horas-sector-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="diagnostico_sectorial_files/figure-html/fig-horas-sector-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-horas-sector-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Horas anuales por trabajador según sector económico, ENESEM 2019
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Las horas anuales por trabajador presentan valores relativamente cercanos entre los cinco sectores.</p>
+<p>La minería registra el valor más elevado, mientras que los servicios presentan el menor, con una diferencia de 126,8 horas al año.</p>
+<p>Esta comparación describe diferencias sectoriales en la utilización del tiempo de trabajo, sin establecer sus causas.</p>
+</section>
+<section id="comparación-gráfica-de-la-productividad-laboral" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="comparación-gráfica-de-la-productividad-laboral"><span class="header-section-number">4.6</span> Comparación gráfica de la productividad laboral</h2>
+<p>El valor agregado por persona ocupada permite examinar las diferencias en la productividad agregada entre sectores.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-productividad-sector" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-productividad-sector-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="diagnostico_sectorial_files/figure-html/fig-productividad-sector-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-productividad-sector-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Valor agregado por trabajador según sector económico, ENESEM 2019
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La productividad agregada de la minería destaca considerablemente frente a los demás sectores económicos.</p>
+<p>Comercio, construcción, manufactura y servicios registran niveles mucho más próximos entre sí.</p>
+<p>La marcada diferencia de productividad minera puede estar relacionada con la intensidad de capital, la escala de operaciones y las características específicas de la actividad económica.</p>
+<p>Por consiguiente, una mayor productividad agregada no implica necesariamente una mayor eficiencia individual de los trabajadores.</p>
+</section>
+<section id="distribución-de-los-indicadores-entre-empresas" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="distribución-de-los-indicadores-entre-empresas"><span class="header-section-number">4.7</span> Distribución de los indicadores entre empresas</h2>
+<p>Los indicadores agregados permiten caracterizar el desempeño sectorial, pero no muestran completamente las diferencias existentes entre las empresas de una misma actividad económica.</p>
+<p>Para complementar el diagnóstico se calculan la mediana, la desviación estándar y los percentiles 25 y 75 de las horas trabajadas y de la productividad laboral individual.</p>
+<p>A diferencia de los indicadores agregados anteriores, estas estadísticas describen las observaciones empresariales de la muestra <strong>sin aplicar ponderaciones</strong>.</p>
+<p>Por ello, la mediana representa una empresa típica de la muestra y no debe confundirse con el cociente entre los totales ponderados de un sector.</p>
+<div class="cell">
+<div id="tbl-dispersion" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dispersion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;4.3: Mediana, desviación estándar y cuartiles de horas y productividad laboral por sector, ENESEM 2019
+</figcaption>
+<div aria-describedby="tbl-dispersion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 23%">
+<col style="width: 10%">
+<col style="width: 22%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sector</th>
+<th style="text-align: left;">Indicador</th>
+<th style="text-align: right;">Mediana</th>
+<th style="text-align: right;">Desviación estándar</th>
+<th style="text-align: right;">Percentil 25</th>
+<th style="text-align: right;">Percentil 75</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Comercio</td>
+<td style="text-align: left;">Horas por trabajador</td>
+<td style="text-align: right;">2.795,3</td>
+<td style="text-align: right;">501,2</td>
+<td style="text-align: right;">2.002,0</td>
+<td style="text-align: right;">2.880,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Comercio</td>
+<td style="text-align: left;">Productividad (USD)</td>
+<td style="text-align: right;">23.102,2</td>
+<td style="text-align: right;">76.303,5</td>
+<td style="text-align: right;">14.597,3</td>
+<td style="text-align: right;">39.791,2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Construcción</td>
+<td style="text-align: left;">Horas por trabajador</td>
+<td style="text-align: right;">2.751,1</td>
+<td style="text-align: right;">541,5</td>
+<td style="text-align: right;">1.961,2</td>
+<td style="text-align: right;">2.880,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Construcción</td>
+<td style="text-align: left;">Productividad (USD)</td>
+<td style="text-align: right;">21.738,3</td>
+<td style="text-align: right;">122.504,8</td>
+<td style="text-align: right;">12.945,8</td>
+<td style="text-align: right;">42.333,9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Manufactura</td>
+<td style="text-align: left;">Horas por trabajador</td>
+<td style="text-align: right;">2.809,3</td>
+<td style="text-align: right;">546,0</td>
+<td style="text-align: right;">2.157,3</td>
+<td style="text-align: right;">3.024,7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Manufactura</td>
+<td style="text-align: left;">Productividad (USD)</td>
+<td style="text-align: right;">23.099,2</td>
+<td style="text-align: right;">34.862,4</td>
+<td style="text-align: right;">15.740,4</td>
+<td style="text-align: right;">34.298,6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Minería</td>
+<td style="text-align: left;">Horas por trabajador</td>
+<td style="text-align: right;">2.644,3</td>
+<td style="text-align: right;">638,1</td>
+<td style="text-align: right;">1.984,8</td>
+<td style="text-align: right;">2.965,4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Minería</td>
+<td style="text-align: left;">Productividad (USD)</td>
+<td style="text-align: right;">26.678,3</td>
+<td style="text-align: right;">1.150.126,7</td>
+<td style="text-align: right;">15.963,5</td>
+<td style="text-align: right;">81.327,8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Servicios</td>
+<td style="text-align: left;">Horas por trabajador</td>
+<td style="text-align: right;">2.718,7</td>
+<td style="text-align: right;">524,5</td>
+<td style="text-align: right;">1.942,6</td>
+<td style="text-align: right;">2.880,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Servicios</td>
+<td style="text-align: left;">Productividad (USD)</td>
+<td style="text-align: right;">21.731,4</td>
+<td style="text-align: right;">652.812,1</td>
+<td style="text-align: right;">13.481,0</td>
+<td style="text-align: right;">36.833,3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Las medianas y los percentiles permiten identificar diferencias importantes entre las empresas de un mismo sector económico.</p>
+<p>En minería, la mediana de productividad es de USD 26.678,3 por trabajador, un valor considerablemente inferior al indicador agregado sectorial.</p>
+<p>Esta diferencia requiere una interpretación cuidadosa, dado que la mediana empresarial y la productividad calculada mediante totales ponderados representan medidas estadísticas distintas.</p>
+<p>La desviación estándar complementa el análisis, aunque puede verse afectada por observaciones extremas, particularmente en actividades con empresas de gran escala.</p>
+</section>
+<section id="distribución-de-las-horas-trabajadas" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="distribución-de-las-horas-trabajadas"><span class="header-section-number">4.8</span> Distribución de las horas trabajadas</h2>
+<p>Los diagramas de caja permiten examinar la dispersión, los valores centrales y las diferencias entre empresas de un mismo sector.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-caja-horas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-caja-horas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="diagnostico_sectorial_files/figure-html/fig-caja-horas-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-caja-horas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Distribución de horas anuales por trabajador según sector económico, ENESEM 2019
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El diagrama permite observar que existen diferencias en la distribución de las horas anuales trabajadas entre las empresas de cada sector.</p>
+<p>El sector Minería presenta la mayor amplitud entre los percentiles 25 y 75, lo que refleja una mayor dispersión central de las horas registradas por persona ocupada.</p>
+<p>La visualización se limita al intervalo comprendido entre los percentiles globales 1 y 99 para facilitar su lectura.</p>
+<p>Esta limitación es exclusivamente gráfica y no representa una eliminación de observaciones de los cálculos.</p>
+</section>
+<section id="distribución-de-la-productividad-laboral" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="distribución-de-la-productividad-laboral"><span class="header-section-number">4.9</span> Distribución de la productividad laboral</h2>
+<p>La productividad empresarial puede presentar diferencias considerables incluso dentro de un mismo sector económico.</p>
+<p>Para examinar esta heterogeneidad, se utiliza un segundo diagrama de caja.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-caja-productividad" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-caja-productividad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="diagnostico_sectorial_files/figure-html/fig-caja-productividad-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-caja-productividad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Distribución de productividad laboral por empresa y sector, ENESEM 2019
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La distribución de la productividad muestra diferencias entre empresas, incluso dentro de una misma actividad económica.</p>
+<p>El sector Minería registra el mayor rango intercuartílico de productividad laboral.</p>
+<p>Estas diferencias permiten comprender por qué los indicadores agregados pueden apartarse considerablemente de los valores observados en una empresa típica.</p>
+<p>Asimismo, reflejan la importancia de considerar la heterogeneidad empresarial antes de formular conclusiones generales sobre la productividad de cada sector.</p>
+<p><strong>Nota:</strong> el gráfico utiliza una ventana visual comprendida entre los percentiles globales 1 y 95 para facilitar la comparación. Esta decisión no elimina registros ni modifica los resultados calculados. Los valores negativos o iguales a cero de productividad se conservaron cuando cumplían los criterios de validez definidos.</p>
+</section>
+<section id="síntesis-del-diagnóstico-sectorial" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="síntesis-del-diagnóstico-sectorial"><span class="header-section-number">4.10</span> Síntesis del diagnóstico sectorial</h2>
+<p>El diagnóstico sectorial de ENESEM 2019 evidencia diferencias relevantes en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas.</p>
+<p>La minería presenta el mayor nivel agregado de valor agregado por persona ocupada, mientras que las actividades de comercio, construcción, manufactura y servicios registran valores considerablemente inferiores.</p>
+<p>Sin embargo, las diferencias de productividad entre sectores no siguen una correspondencia uniforme con las horas trabajadas.</p>
+<p>Adicionalmente, el análisis de las distribuciones individuales evidencia una heterogeneidad importante dentro de cada sector, particularmente en los indicadores de productividad.</p>
+<p>Estos resultados permiten identificar posibles diferencias productivas que serán examinadas posteriormente en los apartados de diagnóstico territorial, problemas y potencialidades, y evidencia correlacional.</p>
+<p>En términos metodológicos, las comparaciones presentadas son descriptivas y no permiten atribuir las diferencias de productividad exclusivamente a la duración del tiempo de trabajo.</p>
+<p>Tampoco constituyen evidencia causal de que aumentar o reducir las horas laborales produzca cambios en el valor agregado generado por las empresas.</p>
+<p><em>Fuente de las tablas y gráficos: Elaboración propia a partir de los microdatos de ENESEM 2019, Instituto Nacional de Estadística y Censos (INEC), Ecuador.</em></p>
 
 
 </section>
@@ -701,12 +1043,12 @@ Tabla&nbsp;3.1: Horas trabajadas y productividad laboral por sector económico, 
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../capitulos/datos_variables.html" class="pagination-link" aria-label="Datos y variables">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datos y variables</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datos y variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../capitulos/diagnostico_territorial.html" class="pagination-link" aria-label="Diagnóstico territorial">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diagnóstico territorial</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diagnóstico territorial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

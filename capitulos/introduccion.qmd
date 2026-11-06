@@ -1,4 +1,3 @@
-
 # Introducción
 
 ## Contextualización del problema
@@ -29,13 +28,11 @@ Analizar la asociación entre las horas trabajadas y la productividad laboral de
 
 ## Objetivos específicos
 
-1. Caracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.
+1.  Caracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.
 
-2. Examinar las diferencias territoriales en productividad y horas trabajadas entre las provincias del Ecuador.
+2.  Examinar las diferencias territoriales en productividad y horas trabajadas entre las provincias del Ecuador.
 
-3. Identificar posibles problemas y potencialidades productivas mediante la comparación de brechas entre provincias y sectores económicos.
-
-4. Estimar la correlación entre las horas trabajadas y la productividad laboral, tanto a nivel general como por sector económico.
+3.  Estimar la correlación entre las horas trabajadas y la productividad laboral, tanto a nivel general como por sector económico.
 
 ## Justificación económica
 

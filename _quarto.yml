@@ -16,12 +16,13 @@ book:
   chapters:
     - index.qmd
     - capitulos/introduccion.qmd
+    - capitulos/revision_literatura.qmd
     - capitulos/datos_variables.qmd
     - capitulos/diagnostico_sectorial.qmd
     - capitulos/diagnostico_territorial.qmd
     - capitulos/problemas_potencialidades.qmd
     - capitulos/evidencia_correlacional.qmd
-    - capitulos/revision_literatura.qmd
+    
     - capitulos/referencias.qmd
 
 lang: es

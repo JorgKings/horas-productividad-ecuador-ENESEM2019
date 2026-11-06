@@ -1,4 +1,3 @@
-
 # Datos y variables
 
 ## Fuente de información
@@ -9,14 +8,14 @@ La base original contiene 3.779 registros empresariales y 1.060 variables. El es
 
 ## Variables principales
 
-| Variable | Código ENESEM | Descripción |
-|---|---|---|
-| Horas trabajadas | `hanuales` | Total de horas anuales trabajadas |
-| Valor agregado | `valag` | Valor agregado empresarial en USD |
-| Personal ocupado | `totalpeoc` | Número de personas ocupadas |
-| Factor de expansión | `f_exp` | Ponderación de la encuesta |
-| Sector económico | `des_sector` | Actividad económica agregada |
-| Provincia | `provincia` | Ubicación territorial |
+| Variable            | Código ENESEM | Descripción                       |
+|---------------------|---------------|-----------------------------------|
+| Horas trabajadas    | `hanuales`    | Total de horas anuales trabajadas |
+| Valor agregado      | `valag`       | Valor agregado empresarial en USD |
+| Personal ocupado    | `totalpeoc`   | Número de personas ocupadas       |
+| Factor de expansión | `f_exp`       | Ponderación de la encuesta        |
+| Sector económico    | `des_sector`  | Actividad económica agregada      |
+| Provincia           | `provincia`   | Ubicación territorial             |
 
 ## Construcción de indicadores
 

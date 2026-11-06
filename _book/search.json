@@ -74,7 +74,7 @@
     "href": "capitulos/introduccion.html#objetivos-específicos",
     "title": "1  Introducción",
     "section": "1.5 Objetivos específicos",
-    "text": "1.5 Objetivos específicos\n\nCaracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.\nExaminar las diferencias territoriales en productividad y horas trabajadas entre las provincias del Ecuador.\nIdentificar posibles problemas y potencialidades productivas mediante la comparación de brechas entre provincias y sectores económicos.\nEstimar la correlación entre las horas trabajadas y la productividad laboral, tanto a nivel general como por sector económico.",
+    "text": "1.5 Objetivos específicos\n\nCaracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.\nExaminar las diferencias territoriales en productividad y horas trabajadas entre las provincias del Ecuador.\nEstimar la correlación entre las horas trabajadas y la productividad laboral, tanto a nivel general como por sector económico.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
     ]
@@ -100,323 +100,373 @@
     ]
   },
   {
-    "objectID": "capitulos/datos_variables.html",
-    "href": "capitulos/datos_variables.html",
-    "title": "2  Datos y variables",
-    "section": "",
-    "text": "2.1 Fuente de información\nLa investigación utiliza microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) de Ecuador.\nLa base original contiene 3.779 registros empresariales y 1.060 variables. El estudio se concentra en las horas trabajadas, el valor agregado, el personal ocupado y las características económicas y territoriales de las empresas.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos y variables</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/datos_variables.html#variables-principales",
-    "href": "capitulos/datos_variables.html#variables-principales",
-    "title": "2  Datos y variables",
-    "section": "2.2 Variables principales",
-    "text": "2.2 Variables principales\n\n\n\nVariable\nCódigo ENESEM\nDescripción\n\n\n\n\nHoras trabajadas\nhanuales\nTotal de horas anuales trabajadas\n\n\nValor agregado\nvalag\nValor agregado empresarial en USD\n\n\nPersonal ocupado\ntotalpeoc\nNúmero de personas ocupadas\n\n\nFactor de expansión\nf_exp\nPonderación de la encuesta\n\n\nSector económico\ndes_sector\nActividad económica agregada\n\n\nProvincia\nprovincia\nUbicación territorial",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos y variables</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/datos_variables.html#construcción-de-indicadores",
-    "href": "capitulos/datos_variables.html#construcción-de-indicadores",
-    "title": "2  Datos y variables",
-    "section": "2.3 Construcción de indicadores",
-    "text": "2.3 Construcción de indicadores\nLa duración del trabajo se expresa mediante las horas anuales trabajadas por persona ocupada:\n\\[\nH_i = \\frac{\\text{Horas anuales trabajadas}_i}\n{\\text{Personal ocupado}_i}\n\\]\nLa productividad laboral se mide como el valor agregado por persona ocupada:\n\\[\nP_i = \\frac{\\text{Valor agregado}_i}\n{\\text{Personal ocupado}_i}\n\\]\nAmbos indicadores permiten realizar comparaciones entre empresas. Sin embargo, comparten el personal ocupado como denominador, lo cual debe considerarse al interpretar su correlación.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos y variables</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/datos_variables.html#tratamiento-de-datos",
-    "href": "capitulos/datos_variables.html#tratamiento-de-datos",
-    "title": "2  Datos y variables",
-    "section": "2.4 Tratamiento de datos",
-    "text": "2.4 Tratamiento de datos\nSe conservaron los registros originales y se construyeron indicadores de calidad para identificar valores faltantes, productividad no positiva y observaciones con un número reducido de horas anuales por trabajador.\nLa muestra utilizada para el análisis correlacional incluye empresas con valores finitos de ambos indicadores y sector económico identificado.\n\n\n\nResumen del tratamiento de datos, ENESEM 2019\n\n\nIndicador\nObservaciones\n\n\n\n\nEmpresas originales\n3779\n\n\nSin indicador de horas valido\n102\n\n\nSin indicador de productividad valido\n72\n\n\nProductividad no positiva\n137\n\n\nHoras anuales por trabajador menores a 1000\n18\n\n\nEmpresas validas para correlacion\n3677\n\n\nEmpresas validas con valor agregado positivo\n3544\n\n\n\n\n\nLas categorías de revisión pueden superponerse y no representan necesariamente exclusiones independientes.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos y variables</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/datos_variables.html#alcance-de-la-información",
-    "href": "capitulos/datos_variables.html#alcance-de-la-información",
-    "title": "2  Datos y variables",
-    "section": "2.5 Alcance de la información",
-    "text": "2.5 Alcance de la información\nEl análisis corresponde al año 2019 y estudia asociaciones entre características empresariales observadas durante ese período.\nLos resultados descriptivos y correlacionales no permiten establecer que una reducción de las horas de trabajo provoque cambios en la productividad laboral.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Datos y variables</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_sectorial.html",
-    "href": "capitulos/diagnostico_sectorial.html",
-    "title": "3  Diagnóstico sectorial",
-    "section": "",
-    "text": "3.1 Caracterización de los sectores económicos\nEl diagnóstico sectorial examina las diferencias en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas incluidas en la Encuesta Estructural Empresarial (ENESEM) 2019.\nEl análisis comprende cinco sectores económicos: comercio, construcción, manufactura, minería y servicios.\nLa productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. Las horas de trabajo se expresan como horas anuales por persona ocupada.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_sectorial.html#horas-trabajadas-y-productividad-laboral-por-sector",
-    "href": "capitulos/diagnostico_sectorial.html#horas-trabajadas-y-productividad-laboral-por-sector",
-    "title": "3  Diagnóstico sectorial",
-    "section": "3.2 Horas trabajadas y productividad laboral por sector",
-    "text": "3.2 Horas trabajadas y productividad laboral por sector\nLa siguiente tabla presenta los indicadores obtenidos a partir de los microdatos de ENESEM 2019.\n\n\n\n\nTabla 3.1: Horas trabajadas y productividad laboral por sector económico, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\nSector económico\nEmpresas en la muestra\nHoras anuales por trabajador\nProductividad (USD/trabajador)\n\n\n\n\nComercio\n1569\n2611.4\n25589.60\n\n\nConstrucción\n208\n2595.3\n24479.57\n\n\nManufactura\n718\n2689.2\n23719.46\n\n\nMinería\n104\n2700.6\n181087.91\n\n\nServicios\n1078\n2573.8\n28056.15\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_sectorial.html#análisis-de-los-resultados",
-    "href": "capitulos/diagnostico_sectorial.html#análisis-de-los-resultados",
-    "title": "3  Diagnóstico sectorial",
-    "section": "3.3 Análisis de los resultados",
-    "text": "3.3 Análisis de los resultados\nLos resultados muestran diferencias importantes entre los sectores económicos analizados.\nLa minería registra la mayor productividad laboral, con aproximadamente USD 181.087,91 de valor agregado por trabajador, acompañada de 2.700,6 horas anuales por persona ocupada.\nPor su parte, el sector servicios presenta una productividad de USD 28.056,15 por trabajador y registra 2.573,8 horas anuales, el menor promedio de horas entre los cinco sectores.\nLa manufactura presenta una productividad de USD 23.719,46 por trabajador, pese a registrar 2.689,2 horas anuales.\nEstos resultados muestran que las diferencias de productividad entre sectores no siguen una relación uniforme con las horas trabajadas.\nNo obstante, la productividad puede estar relacionada con características como la intensidad de capital, la tecnología utilizada y la composición de las actividades económicas.\nPor tanto, las diferencias observadas constituyen evidencia descriptiva y no permiten establecer que una mayor o menor jornada laboral provoque cambios en la productividad.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_sectorial.html#consideraciones-del-diagnóstico",
-    "href": "capitulos/diagnostico_sectorial.html#consideraciones-del-diagnóstico",
-    "title": "3  Diagnóstico sectorial",
-    "section": "3.4 Consideraciones del diagnóstico",
-    "text": "3.4 Consideraciones del diagnóstico\nLos indicadores sectoriales fueron calculados utilizando el factor de expansión de ENESEM 2019 y considerando empresas con información válida sobre horas trabajadas, valor agregado y personal ocupado.\nLos resultados corresponden a las actividades y empresas comprendidas en la cobertura de la encuesta. No representan necesariamente al conjunto de unidades productivas del Ecuador.\nAsimismo, las horas anuales por persona ocupada requieren una revisión adicional de su definición metodológica antes de compararlas directamente con las jornadas laborales legales.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_territorial.html",
-    "href": "capitulos/diagnostico_territorial.html",
-    "title": "4  Diagnóstico territorial",
-    "section": "",
-    "text": "4.1 Caracterización territorial\nEl diagnóstico territorial examina las diferencias en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas según su ubicación provincial.\nEl propósito es identificar patrones de heterogeneidad territorial y explorar la distribución espacial de los indicadores productivos.\nEl análisis se realiza con los microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_territorial.html#productividad-laboral-por-provincia",
-    "href": "capitulos/diagnostico_territorial.html#productividad-laboral-por-provincia",
-    "title": "4  Diagnóstico territorial",
-    "section": "4.2 Productividad laboral por provincia",
-    "text": "4.2 Productividad laboral por provincia\nLa siguiente tabla presenta el número de empresas de la muestra, las horas anuales por persona ocupada y el valor agregado por trabajador para cada provincia.\n\n\n\n\nTabla 4.1: Horas trabajadas y productividad laboral por provincia, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nEmpresas\nHoras anuales por trabajador\nProductividad (USD/trabajador)\n\n\n\n\nAzuay\n219\n2525.0\n37337.14\n\n\nBolívar\n1\n3190.6\n35166.12\n\n\nCañar\n12\n3894.7\n15408.52\n\n\nCarchi\n9\n2050.8\n18086.23\n\n\nCotopaxi\n25\n2683.7\n20311.17\n\n\nChimborazo\n22\n2945.2\n21963.37\n\n\nEl Oro\n117\n2226.9\n19428.51\n\n\nEsmeraldas\n27\n2549.1\n65498.93\n\n\nGuayas\n1333\n2590.5\n27450.29\n\n\nImbabura\n41\n2724.5\n19845.37\n\n\nLoja\n31\n2397.9\n26699.49\n\n\nLos Ríos\n77\n2682.5\n19167.86\n\n\nManabí\n150\n2446.4\n16854.77\n\n\nMorona Santiago\n2\n2234.2\n17967.45\n\n\nNapo\n2\n3029.8\n37321.68\n\n\nPastaza\n3\n3089.3\n27209.10\n\n\nPichincha\n1364\n2665.5\n37678.31\n\n\nTungurahua\n111\n2702.7\n19335.93\n\n\nZamora Chinchipe\n6\n2243.6\n-24010.71\n\n\nGalápagos\n6\n2855.5\n45302.53\n\n\nSucumbíos\n11\n2974.5\n12673.44\n\n\nOrellana\n14\n2821.1\n19490.47\n\n\nSanto Domingo de los Tsáchilas\n76\n2432.3\n16427.10\n\n\nSanta Elena\n18\n2632.8\n15590.50\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_territorial.html#análisis-de-los-resultados",
-    "href": "capitulos/diagnostico_territorial.html#análisis-de-los-resultados",
-    "title": "4  Diagnóstico territorial",
-    "section": "4.3 Análisis de los resultados",
-    "text": "4.3 Análisis de los resultados\nLos resultados evidencian diferencias territoriales en la productividad laboral.\nPichincha y Guayas concentran una proporción importante de los registros empresariales analizados, mientras que otras provincias presentan tamaños de muestra considerablemente menores.\nEntre los resultados preliminares, Azuay y Pichincha registran indicadores agregados de productividad cercanos a USD 37.000 por trabajador.\nPor otra parte, existen provincias con valores relativamente reducidos e incluso indicadores agregados negativos, lo que requiere examinar la composición sectorial y las características de las empresas incluidas.\nEstas diferencias constituyen evidencia descriptiva de heterogeneidad territorial, pero no permiten atribuir las brechas únicamente a la localización geográfica.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/diagnostico_territorial.html#limitaciones-del-diagnóstico-territorial",
-    "href": "capitulos/diagnostico_territorial.html#limitaciones-del-diagnóstico-territorial",
-    "title": "4  Diagnóstico territorial",
-    "section": "4.4 Limitaciones del diagnóstico territorial",
-    "text": "4.4 Limitaciones del diagnóstico territorial\nLa precisión de los indicadores provinciales puede verse afectada por el reducido número de observaciones disponibles en determinados territorios.\nPor tanto, las comparaciones deben interpretarse con precaución, particularmente en provincias con muy pocas empresas en la muestra.\nLos indicadores fueron construidos utilizando el factor de expansión disponible en ENESEM. Sin embargo, todavía no se han calculado errores estándar ni intervalos de confianza del diseño muestral.\nEn consecuencia, el diagnóstico permite identificar diferencias observadas, pero no establecer formalmente su significancia estadística.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html",
-    "href": "capitulos/problemas_potencialidades.html",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "",
-    "text": "5.1 Identificación de brechas de productividad\nLa identificación de problemas y potencialidades se desarrolla mediante la comparación de indicadores productivos entre provincias y sectores económicos.\nPara cada combinación provincia-sector, se calcula la diferencia porcentual entre su productividad laboral y el indicador agregado nacional correspondiente al mismo sector.\nLa brecha de productividad se define como:\n\\[\nB_{ps} =\n\\left(\n\\frac{P_{ps}}{P_s} - 1\n\\right)\\times 100\n\\]\nDonde:\nUna brecha positiva indica que la productividad del grupo se encuentra por encima de su referencia sectorial. Una brecha negativa indica que está por debajo.\nEstos indicadores constituyen medidas relativas de desempeño productivo, no estimaciones directas de eficiencia técnica.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html#identificación-de-brechas-de-productividad",
-    "href": "capitulos/problemas_potencialidades.html#identificación-de-brechas-de-productividad",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "",
-    "text": "\\(B_{ps}\\): brecha porcentual de productividad de la provincia \\(p\\) en el sector \\(s\\).\n\\(P_{ps}\\): productividad laboral de la combinación provincia-sector.\n\\(P_s\\): productividad laboral agregada del sector a escala nacional.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html#potencialidades-productivas",
-    "href": "capitulos/problemas_potencialidades.html#potencialidades-productivas",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "5.2 Potencialidades productivas",
-    "text": "5.2 Potencialidades productivas\nLa siguiente tabla presenta las combinaciones provincia-sector con las mayores brechas positivas.\n\n\n\n\nTabla 5.1: Principales brechas positivas de productividad, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nSector\nEmpresas\nBrecha (%)\nDiferencia de horas\n\n\n\n\n27\nAzuay\nServicios\n36\n177.51\n-162.3\n\n\n26\nPichincha\nMinería\n59\n72.33\n289.4\n\n\n8\nPichincha\nComercio\n506\n25.89\n40.7\n\n\n19\nGuayas\nManufactura\n286\n25.33\n-31.6\n\n\n14\nPichincha\nConstrucción\n82\n22.09\n-21.8\n\n\n2\nEl Oro\nComercio\n67\n18.38\n-454.9\n\n\n32\nGuayas\nServicios\n387\n11.26\n-26.8\n\n\n15\nAzuay\nManufactura\n51\n4.81\n-72.2\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\n\n5.2.1 Interpretación de las potencialidades\nEntre los resultados destaca el sector servicios de Azuay, que presenta una brecha positiva de productividad del 177,51 %, acompañada de 162,3 horas anuales menos por trabajador respecto a la referencia sectorial.\nTambién sobresale el sector minero de Pichincha, cuya productividad supera en 72,33 % la referencia nacional del sector.\nEstos resultados permiten identificar actividades económicas que merecen un análisis más detallado para comprender sus características productivas.\nSin embargo, las diferencias podrían estar relacionadas con intensidad de capital, tecnología, especialización empresarial o valores extremos.\nNo es posible afirmar que representen una mayor eficiencia laboral únicamente con estos indicadores.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html#posibles-problemas-productivos",
-    "href": "capitulos/problemas_potencialidades.html#posibles-problemas-productivos",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "5.3 Posibles problemas productivos",
-    "text": "5.3 Posibles problemas productivos\nLa siguiente tabla presenta las combinaciones provincia-sector con las mayores brechas negativas.\n\n\n\n\nTabla 5.2: Principales brechas negativas de productividad, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nSector\nEmpresas\nBrecha (%)\nDiferencia de horas\n\n\n\n\n24\nEl Oro\nMinería\n10\n-93.43\n-506.5\n\n\n25\nAzuay\nMinería\n21\n-89.89\n-334.6\n\n\n28\nImbabura\nServicios\n11\n-54.78\n200.9\n\n\n23\nSanto Domingo\nManufactura\n14\n-51.96\n-644.9\n\n\n9\nLoja\nComercio\n16\n-50.32\n-340.8\n\n\n29\nEl Oro\nServicios\n21\n-45.75\n-497.5\n\n\n30\nManabi\nServicios\n37\n-43.61\n-452.0\n\n\n5\nCotopaxi\nComercio\n15\n-43.36\n-64.2\n\n\n34\nTungurahua\nServicios\n21\n-42.83\n-24.9\n\n\n33\nSanto Domingo\nServicios\n15\n-42.19\n-158.4\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\n\n5.3.1 Interpretación de los posibles problemas\nLos resultados muestran brechas negativas importantes en determinadas combinaciones provincia-sector.\nEntre ellas destaca el sector servicios de Imbabura, que registra una productividad 54,78 % inferior a la referencia sectorial, pese a presentar aproximadamente 200,9 horas anuales adicionales por trabajador.\nTambién se identifican brechas negativas en actividades mineras de El Oro y Azuay, así como en el comercio de Loja.\nEstas diferencias pueden orientar la identificación de posibles problemas productivos, pero no constituyen evidencia suficiente para determinar sus causas.\nUna productividad relativamente baja podría reflejar características del capital empresarial, diferencias tecnológicas, composición productiva u otras condiciones no observadas.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html#síntesis-del-diagnóstico",
-    "href": "capitulos/problemas_potencialidades.html#síntesis-del-diagnóstico",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "5.4 Síntesis del diagnóstico",
-    "text": "5.4 Síntesis del diagnóstico\nEl análisis identifica una heterogeneidad considerable en las condiciones productivas de las empresas ecuatorianas.\nAlgunas combinaciones provincia-sector presentan mayor productividad relativa con menos horas de trabajo, mientras que otras registran menor productividad pese a jornadas relativamente más extensas.\nNo obstante, estos patrones no son uniformes y no deben interpretarse como evidencia causal de que una reducción de horas aumentaría la productividad.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/problemas_potencialidades.html#precauciones-metodológicas",
-    "href": "capitulos/problemas_potencialidades.html#precauciones-metodológicas",
-    "title": "5  Problemas y potencialidades productivas",
-    "section": "5.5 Precauciones metodológicas",
-    "text": "5.5 Precauciones metodológicas\nPara este diagnóstico preliminar se presentan indicadores únicamente de combinaciones provincia-sector con al menos diez empresas observadas.\nDe las 84 combinaciones identificadas, 50 tienen menos de diez empresas y requieren especial precaución.\nEl umbral utilizado es un criterio exploratorio de presentación y no garantiza precisión estadística.\nAdemás, las brechas de productividad dependen de la estructura sectorial, de las ponderaciones aplicadas y de la composición de las empresas incluidas en cada grupo.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html",
-    "href": "capitulos/evidencia_correlacional.html",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "",
-    "text": "6.1 Objetivo del análisis\nEl análisis correlacional examina la asociación entre las horas anuales trabajadas por persona ocupada y la productividad laboral de las empresas ecuatorianas.\nSe utilizan los coeficientes de Pearson y Spearman para describir la dirección y la intensidad de la relación entre ambas variables.\nLa correlación de Pearson permite estudiar la asociación lineal, mientras que la correlación de Spearman examina la asociación entre los rangos de las observaciones.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#muestra-de-análisis",
-    "href": "capitulos/evidencia_correlacional.html#muestra-de-análisis",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.2 Muestra de análisis",
-    "text": "6.2 Muestra de análisis\nLa base original contiene 3.779 registros empresariales.\nPara el análisis de correlación se utilizan 3.677 empresas con información válida de horas trabajadas y productividad laboral.\nSe mantienen las observaciones con valor agregado negativo o igual a cero, siempre que los indicadores requeridos sean válidos.\nLas observaciones con valores extremos se conservan en la estimación principal y se examinan mediante un análisis complementario de sensibilidad.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#correlación-general",
-    "href": "capitulos/evidencia_correlacional.html#correlación-general",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.3 Correlación general",
-    "text": "6.3 Correlación general\n\n\n\n\nTabla 6.1: Correlación general entre horas trabajadas y productividad, ENESEM 2019\n\n\n\n\n\n\nAnálisis\nEmpresas\nPearson\nSpearman\n\n\n\n\nGeneral\n3677\n-0.0477\n-0.0075\n\n\nPercentiles 1-99\n3534\n-0.0560\n-0.0097\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\nEl coeficiente de Pearson de la muestra completa es aproximadamente -0,0477, mientras que el coeficiente de Spearman es cercano a -0,0075.\nAmbos resultados indican que la asociación observada entre horas trabajadas y productividad es muy débil.\nEl análisis de sensibilidad, que excluye temporalmente las observaciones situadas fuera de los percentiles 1 y 99 de ambas variables, mantiene coeficientes cercanos a cero.\nEsto sugiere que la ausencia de una asociación general fuerte no depende exclusivamente de los valores extremos.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#correlación-ponderada-general",
-    "href": "capitulos/evidencia_correlacional.html#correlación-ponderada-general",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.4 Correlación ponderada general",
-    "text": "6.4 Correlación ponderada general\nSe calcula una correlación adicional utilizando el factor de expansión proporcionado por ENESEM.\n\n\n\n\nTabla 6.2: Correlación de Pearson ponderada, ENESEM 2019\n\n\n\n\n\n\nEmpresas\nPearson_ponderada\n\n\n\n\n3677\n-0.0033\n\n\n\n\n\n\n\n\nLa correlación ponderada es aproximadamente -0,0033, valor prácticamente nulo.\nPor tanto, los resultados descriptivos no muestran una asociación lineal general importante entre horas trabajadas y productividad laboral.\nEsta ponderación no sustituye el tratamiento completo del diseño muestral para realizar inferencias estadísticas.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#correlación-por-sector-económico",
-    "href": "capitulos/evidencia_correlacional.html#correlación-por-sector-económico",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.5 Correlación por sector económico",
-    "text": "6.5 Correlación por sector económico\n\n\n\n\nTabla 6.3: Correlaciones por sector económico, ENESEM 2019\n\n\n\n\n\n\nSector\nEmpresas\nPearson ponderada\nSpearman sin ponderar\n\n\n\n\nComercio\n1569\n0.0838\n-0.0462\n\n\nConstrucción\n208\n0.0457\n0.0475\n\n\nManufactura\n718\n0.1023\n0.1159\n\n\nMinería\n104\n-0.2632\n0.1282\n\n\nServicios\n1078\n0.0050\n-0.0652\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\nLos resultados presentan diferencias según la actividad económica.\nManufactura registra una correlación ponderada positiva débil, aproximadamente 0,1023.\nComercio y construcción también muestran asociaciones positivas de magnitud reducida.\nServicios presenta una correlación prácticamente nula.\nPor su parte, minería registra una correlación de Pearson ponderada negativa, aunque el análisis de sensibilidad evidencia que la relación es especialmente vulnerable a valores extremos.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#valores-extremos-en-minería",
-    "href": "capitulos/evidencia_correlacional.html#valores-extremos-en-minería",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.6 Valores extremos en minería",
-    "text": "6.6 Valores extremos en minería\nEn el sector minero, la correlación de Pearson sin ponderar de la muestra completa es aproximadamente -0,3621.\nAl excluir temporalmente los extremos de productividad correspondientes a los percentiles 1 y 99, el coeficiente se aproxima a -0,0145.\nEsta diferencia indica que el resultado inicial es sensible a observaciones extremas y no debe interpretarse como evidencia de una relación negativa generalizada.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#limitaciones-del-análisis",
-    "href": "capitulos/evidencia_correlacional.html#limitaciones-del-análisis",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.7 Limitaciones del análisis",
-    "text": "6.7 Limitaciones del análisis\nLos resultados deben interpretarse considerando las siguientes limitaciones:\n\nLa base corresponde a un único año, por lo que no permite observar cambios de productividad antes y después de modificaciones de jornada laboral.\nLas horas trabajadas y la productividad laboral se calculan utilizando el personal ocupado como denominador común. Esto puede generar asociaciones matemáticas que no reflejen exclusivamente una relación económica.\nLa productividad laboral puede depender de factores adicionales, como capital, tecnología, organización empresarial y composición sectorial.\nLas correlaciones presentadas son descriptivas. No se han estimado efectos causales ni se han realizado pruebas formales de significancia ajustadas al diseño muestral.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/evidencia_correlacional.html#interpretación-general",
-    "href": "capitulos/evidencia_correlacional.html#interpretación-general",
-    "title": "6  Evidencia empírica correlacional",
-    "section": "6.8 Interpretación general",
-    "text": "6.8 Interpretación general\nLa evidencia empírica de ENESEM 2019 no identifica una asociación lineal general fuerte entre las horas anuales trabajadas por persona ocupada y el valor agregado por trabajador.\nNo obstante, se observan diferencias sectoriales y territoriales que justifican continuar examinando la heterogeneidad productiva.\nEstos resultados no permiten concluir que una reducción de jornada laboral aumentaría o disminuiría la productividad de las empresas ecuatorianas.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
-    ]
-  },
-  {
     "objectID": "capitulos/revision_literatura.html",
     "href": "capitulos/revision_literatura.html",
-    "title": "7  Revisión de literatura",
+    "title": "2  Revisión de literatura",
     "section": "",
-    "text": "7.1 Relación entre horas de trabajo y productividad\nLa relación entre el tiempo de trabajo y la productividad constituye un tema relevante dentro de la economía laboral.\nDesde una perspectiva económica, el incremento de las horas trabajadas puede aumentar la producción total, pero no necesariamente de manera proporcional.\nEn particular, la literatura ha estudiado los rendimientos decrecientes del tiempo de trabajo y los posibles mecanismos de fatiga que afectan el desempeño de los trabajadores.",
+    "text": "2.1 Relación entre horas de trabajo y productividad\nLa relación entre el tiempo de trabajo y la productividad constituye un tema relevante dentro de la economía laboral, debido a que las horas trabajadas representan uno de los recursos utilizados por las empresas para desarrollar sus actividades productivas.\nDesde una perspectiva económica, el incremento de las horas trabajadas puede aumentar la producción total, pero no necesariamente de manera proporcional. Esta relación puede variar según la duración de la jornada, las características de los trabajadores y las condiciones de producción.\nLa literatura económica ha estudiado los rendimientos decrecientes del tiempo de trabajo, los efectos de la fatiga y la influencia de la organización laboral sobre la productividad. Asimismo, diversas investigaciones señalan que las diferencias sectoriales, la tecnología, el capital y las condiciones empresariales pueden contribuir a explicar los distintos niveles de rendimiento productivo.\nEn este contexto, resulta pertinente revisar la evidencia empírica internacional para comprender cómo se relacionan las horas trabajadas y la productividad laboral, considerando los diferentes métodos e indicadores utilizados por los investigadores.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Revisión de literatura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revisión de literatura</span>"
     ]
   },
   {
     "objectID": "capitulos/revision_literatura.html#evidencia-empírica-internacional",
     "href": "capitulos/revision_literatura.html#evidencia-empírica-internacional",
-    "title": "7  Revisión de literatura",
-    "section": "7.2 Evidencia empírica internacional",
-    "text": "7.2 Evidencia empírica internacional\n\n7.2.1 Rendimientos decrecientes de las horas trabajadas\nPencavel (2015) estudió la relación entre las horas laborales y la producción utilizando información histórica sobre trabajadores de la industria de municiones.\nEl autor identificó una relación no lineal en la que, por encima de determinados niveles de jornada, la producción continúa aumentando, pero a una tasa decreciente.\nEste resultado muestra que la relación entre tiempo de trabajo y producción puede depender de la duración de la jornada.\n\n\n7.2.2 Horas trabajadas y productividad individual\nCollewet y Sauermann (2017) analizaron información diaria sobre horas trabajadas y desempeño de empleados de centros de atención telefónica.\nSus resultados indican que un aumento de las horas trabajadas se relaciona con una reducción de la productividad por hora, medida mediante el tiempo requerido para atender llamadas.\nEl estudio destaca la fatiga como un posible mecanismo explicativo.",
+    "title": "2  Revisión de literatura",
+    "section": "2.2 Evidencia empírica internacional",
+    "text": "2.2 Evidencia empírica internacional\n\n2.2.1 Rendimientos decrecientes de las horas trabajadas\nPencavel (2015) estudió la relación entre las horas laborales y la producción utilizando información histórica sobre trabajadores de la industria de municiones.\nEl autor identificó una relación no lineal en la que, por encima de determinados niveles de jornada, la producción continúa aumentando, pero a una tasa decreciente. Este resultado muestra que trabajar más horas no garantiza un incremento proporcional de la producción.\nAtack et al. (2003) analizaron la relación entre la duración de la jornada y la productividad manufacturera en Estados Unidos, utilizando información del censo industrial de 1880.\nLos autores encontraron que la producción aumentaba con las horas trabajadas, pero en una proporción menor. Esto indica la existencia de rendimientos decrecientes del tiempo laboral, incluso considerando factores como el capital y el empleo.\nShepard y Clifton (2000) examinaron la influencia de las horas extraordinarias sobre la productividad laboral en 18 industrias manufactureras de Estados Unidos, mediante información correspondiente al período 1956-1991.\nSus resultados indican que el incremento de las horas extraordinarias se relaciona con una reducción de la productividad promedio por hora en la mayoría de las industrias analizadas.\nAnxo y Bigsten (1989) estudiaron la relación entre las horas de trabajo y la producción en el sector manufacturero de Suecia, utilizando diferentes especificaciones de funciones de producción.\nLos investigadores estimaron una elasticidad de la producción respecto a las horas trabajadas cercana a 0,91. Sin embargo, no pudieron rechazar que fuera igual a uno, por lo que no encontraron evidencia concluyente de un cambio en la productividad asociado con la reducción de la jornada.\n\n\n2.2.2 Horas trabajadas y productividad individual\nCollewet y Sauermann (2017) analizaron información diaria sobre horas trabajadas y desempeño de empleados de centros de atención telefónica.\nSus resultados indican que un aumento de las horas trabajadas se relaciona con una reducción de la productividad por hora, medida mediante el tiempo requerido para atender llamadas. El estudio destaca la fatiga como un posible mecanismo explicativo.\nBrummelhuis et al. (2025) investigaron cómo las jornadas laborales prolongadas se relacionan con el desempeño de los trabajadores durante el mismo día y el día siguiente.\nLos autores encontraron que trabajar más horas se asociaba con un mayor desempeño durante la jornada, pero también con una disminución del rendimiento al día siguiente. Esta relación estuvo vinculada con la reducción del tiempo de sueño y la recuperación del trabajador.\nEstos antecedentes muestran que la relación entre horas trabajadas y productividad puede variar según el período de observación y las condiciones físicas y laborales de los empleados.\n\n\n2.2.3 Reducción de la jornada laboral y productividad\nPark y Park (2019) analizaron el impacto de la reducción de la semana laboral sobre la productividad de establecimientos manufactureros de Corea del Sur, mediante un modelo de diferencias en diferencias.\nLos investigadores encontraron que la política redujo las horas trabajadas por empleado y aumentó la producción por trabajador. Este resultado estuvo relacionado con mejoras en la productividad total de los factores y una mayor utilización de capital.\nBatut et al. (2023) estudiaron los efectos de las reformas de reducción de la jornada laboral sobre diferentes sectores económicos europeos, utilizando información correspondiente al período 1995-2007.\nLos autores encontraron que los sectores más afectados experimentaron una reducción de las horas trabajadas y un aumento de los salarios por hora. El efecto estimado sobre el valor agregado por hora fue positivo, pero estadísticamente no significativo.\nCette et al. (2026) examinaron las relaciones entre horas trabajadas, productividad y empleo, considerando los mecanismos económicos que intervienen en la reducción de las jornadas laborales.\nLos autores explican que la relación entre productividad y tiempo de trabajo puede ser bidireccional. Las mejoras productivas pueden favorecer jornadas más cortas, mientras que la reducción de las horas puede modificar la productividad mediante cambios en la fatiga y los costos laborales.\nEn conjunto, estas investigaciones muestran que una reducción de la jornada no produce necesariamente los mismos resultados en todas las empresas o sectores económicos.\n\n\n2.2.4 Organización del trabajo y productividad empresarial\nShangguan et al. (2025) analizaron la relación entre la distribución de las horas trabajadas y la productividad de equipos de arquitectos que desarrollaban proyectos de construcción en una empresa japonesa.\nLos autores encontraron un aumento del 8,9 % en la productividad promedio de los equipos. Mediante un ejercicio contrafactual, estimaron que el 59,7 % de esta mejora estuvo relacionado con la redistribución de las horas de trabajo entre sus integrantes.\nShao et al. (2023) examinaron la complementariedad de las horas trabajadas entre empleados de una misma empresa, utilizando información vinculada de trabajadores y establecimientos.\nLos investigadores estimaron una elasticidad de sustitución de las horas trabajadas de 0,69 a nivel agregado y encontraron diferencias entre industrias. Esto indica que las horas laborales de distintos trabajadores no son perfectamente sustituibles en los procesos productivos.\nDevicienti et al. (2018) estudiaron cómo la utilización de trabajadores a tiempo parcial se relaciona con la productividad de las empresas italianas, mediante datos empresariales correspondientes al período 2000-2010.\nLos resultados muestran que un incremento del 10 % en la proporción de empleados a tiempo parcial redujo la productividad empresarial estimada en aproximadamente 1,45 %. Los autores identificaron diferencias según la organización de los contratos laborales.\nEden (2021) desarrolló un modelo teórico para estudiar cómo la organización de la semana laboral influye en la productividad, considerando el descanso y la acumulación de habilidades.\nLa autora plantea que una distribución del tiempo de trabajo con descansos más frecuentes puede generar beneficios productivos. Este resultado destaca la importancia de la organización de la jornada y no únicamente de su duración total.\nEstos estudios permiten comprender que las diferencias de productividad entre empresas también pueden estar relacionadas con la distribución del trabajo, la coordinación de los empleados y las características de la organización productiva.\n\n\n2.2.5 Flexibilidad horaria y productividad laboral\nBoltz et al. (2023) analizaron cómo la flexibilidad de los horarios laborales afecta la productividad de trabajadores que realizan actividades rutinarias, mediante un experimento de campo.\nLos autores encontraron que permitir a los trabajadores elegir sus horarios de entrada y salida incrementó la productividad global hasta en un 50 %. Este resultado estuvo relacionado con la selección de trabajadores y una utilización más efectiva del tiempo laboral.\nDeVaro (2025) estudió las decisiones empresariales sobre la organización de las jornadas laborales, considerando la duración del trabajo, la flexibilidad horaria y la fatiga.\nEl autor encontró que los horarios flexibles pueden reducir la pérdida de productividad asociada con jornadas prolongadas. Los resultados muestran que la organización del tiempo laboral influye en el rendimiento de los trabajadores.\nMühl y Korunka (2024) analizaron los efectos de implementar una semana laboral comprimida de cuatro días en una empresa del sector de la construcción.\nLos investigadores encontraron una reducción de la fatiga y de la presión temporal, acompañada de una mejora en el equilibrio entre el trabajo y la vida personal. Sin embargo, la productividad percibida se mantuvo estable durante el período analizado.\nBloom et al. (2015) realizaron un experimento en una empresa de servicios de China para examinar los efectos del trabajo desde casa sobre el desempeño laboral.\nLos autores encontraron un incremento del 13 % en el rendimiento de los trabajadores. Este resultado se explicó por una mayor cantidad de minutos efectivos de trabajo y un aumento de la producción realizada por minuto.\nDeole et al. (2023) estudiaron la relación entre el teletrabajo y el desempeño laboral en Reino Unido durante la pandemia de COVID-19, utilizando información de trabajadores.\nLos resultados indican que una mayor frecuencia de trabajo desde casa se asoció con un incremento de la productividad por hora autopercibida. No obstante, esta relación no estuvo acompañada de cambios significativos en las horas semanales trabajadas.\nEstos antecedentes muestran que las condiciones de organización laboral pueden relacionarse con diferentes niveles de productividad, aun cuando la cantidad de horas trabajadas no presente variaciones importantes.\n\n\n2.2.6 Otros factores relacionados con la productividad laboral\nClemens y Sauermann (2025) examinaron los efectos de los incentivos salariales sobre la productividad de trabajadores de centros de atención telefónica, considerando las diferencias en sus habilidades.\nLos investigadores encontraron que los incentivos tuvieron efectos diferentes según el nivel de habilidades de los empleados. También identificaron una reducción de las horas extraordinarias, lo que muestra que los mecanismos de remuneración pueden relacionarse con la utilización del tiempo laboral.\nBöckerman y Ilmakunnas (2012) analizaron la relación entre satisfacción laboral y productividad en establecimientos manufactureros de Finlandia, utilizando información de trabajadores y registros empresariales.\nLos autores encontraron una relación positiva entre la satisfacción laboral y la productividad medida mediante el valor agregado por hora trabajada. Este resultado muestra la importancia de considerar características laborales adicionales al estudiar el desempeño productivo.\nEstas investigaciones complementan la evidencia sobre horas trabajadas, debido a que muestran que la productividad también puede estar relacionada con los incentivos, la satisfacción y las características de los trabajadores.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Revisión de literatura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revisión de literatura</span>"
     ]
   },
   {
     "objectID": "capitulos/revision_literatura.html#síntesis-de-los-antecedentes",
     "href": "capitulos/revision_literatura.html#síntesis-de-los-antecedentes",
-    "title": "7  Revisión de literatura",
-    "section": "7.3 Síntesis de los antecedentes",
-    "text": "7.3 Síntesis de los antecedentes\n\n\n\n\n\n\n\n\n\nAutores\nRevista\nEnfoque\nHallazgo principal\n\n\n\n\nPencavel (2015)\nThe Economic Journal\nHoras de trabajo y producción\nRendimientos decrecientes en jornadas extensas\n\n\nCollewet y Sauermann (2017)\nLabour Economics\nHoras de trabajo y productividad individual\nMenor productividad por hora al aumentar las horas trabajadas\n\n\n\nAmbos artículos fueron publicados en revistas clasificadas como Q1 en Economía según SJR 2025.",
+    "title": "2  Revisión de literatura",
+    "section": "2.3 Síntesis de los antecedentes",
+    "text": "2.3 Síntesis de los antecedentes\nLa siguiente tabla resume las principales investigaciones sobre horas trabajadas y productividad laboral, considerando sus enfoques y resultados más relevantes.\n\n\n\n\n\n\n\n\n\nAutores\nRevista\nEnfoque\nHallazgo principal\n\n\n\n\nPencavel (2015)\nThe Economic Journal\nHoras de trabajo y producción\nRendimientos decrecientes en jornadas extensas\n\n\nCollewet y Sauermann (2017)\nLabour Economics\nHoras y productividad individual\nMenor productividad por hora al aumentar las horas\n\n\nPark y Park (2019)\nJournal of Policy Analysis and Management\nReducción de la jornada\nMayor producción por trabajador tras la reforma\n\n\nAtack et al. (2003)\nExplorations in Economic History\nJornada y producción manufacturera\nRendimientos decrecientes de las horas diarias\n\n\nBatut et al. (2023)\nIndustrial Relations\nReformas laborales y productividad sectorial\nEfecto positivo no significativo sobre valor agregado por hora\n\n\nShangguan et al. (2025)\nInternational Economic Review\nDistribución de horas en equipos\nMejora productiva asociada con redistribución del tiempo\n\n\nEden (2021)\nThe Scandinavian Journal of Economics\nOrganización de la semana laboral\nBeneficios potenciales de descansos más frecuentes\n\n\nBoltz et al. (2023)\nBritish Journal of Industrial Relations\nFlexibilidad horaria\nMayor productividad con horarios flexibles\n\n\nCette et al. (2026)\nTransfer\nHoras, productividad y empleo\nRelación bidireccional entre horas y productividad\n\n\nShao et al. (2023)\nJournal of Economic Dynamics and Control\nComplementariedad de horas\nDiferencias en la sustitución de horas entre industrias\n\n\nDeVaro (2025)\nJournal of Economic Behavior & Organization\nHorarios y rendimiento laboral\nLa flexibilidad puede moderar pérdidas de productividad\n\n\nShepard y Clifton (2000)\nInternational Journal of Manpower\nHoras extraordinarias\nReducción de productividad promedio por hora\n\n\nDevicienti et al. (2018)\nIndustrial and Corporate Change\nTrabajo parcial y productividad empresarial\nMenor productividad asociada con mayor empleo parcial\n\n\nten Brummelhuis et al. (2025)\nJournal of Organizational Behavior\nJornadas extensas y desempeño diario\nMenor desempeño posterior por reducción del descanso\n\n\nMühl y Korunka (2024)\nEuropean Journal of Work and Organizational Psychology\nSemana laboral comprimida\nProductividad percibida estable y menor fatiga\n\n\nDeole et al. (2023)\nLabour Economics\nTeletrabajo y productividad\nMayor productividad horaria autopercibida\n\n\nBloom et al. (2015)\nThe Quarterly Journal of Economics\nTeletrabajo y desempeño\nIncremento del rendimiento laboral\n\n\nAnxo y Bigsten (1989)\nThe Scandinavian Journal of Economics\nHoras y producción manufacturera\nSin evidencia concluyente de cambios en productividad\n\n\nClemens y Sauermann (2025)\nLabour Economics\nIncentivos y productividad\nEfectos diferentes según habilidades del trabajador\n\n\nBöckerman e Ilmakunnas (2012)\nILR Review\nSatisfacción y productividad\nAsociación positiva con valor agregado por hora\n\n\n\nLos antecedentes presentan resultados diferentes sobre la relación entre las horas trabajadas y la productividad laboral.\nAlgunos estudios identifican rendimientos decrecientes en jornadas prolongadas, mientras que otros encuentran asociaciones positivas, negativas o estadísticamente no significativas. Estas diferencias pueden estar relacionadas con la actividad económica, la organización del trabajo y los indicadores utilizados.\nAdemás, las investigaciones emplean distintas medidas de productividad, como producción por trabajador, valor agregado por hora, productividad total de los factores y desempeño individual. Por tanto, sus resultados deben interpretarse considerando las características metodológicas de cada estudio.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Revisión de literatura</span>"
-    ]
-  },
-  {
-    "objectID": "capitulos/revision_literatura.html#mapa-sinóptico-de-la-literatura",
-    "href": "capitulos/revision_literatura.html#mapa-sinóptico-de-la-literatura",
-    "title": "7  Revisión de literatura",
-    "section": "7.4 Mapa sinóptico de la literatura",
-    "text": "7.4 Mapa sinóptico de la literatura\nHoras de trabajo y productividad laboral\n\nRendimientos del tiempo de trabajo\n\nPencavel (2015)\nRelación no lineal entre horas y producción.\nPosibilidad de rendimientos marginales decrecientes.\n\nFatiga y desempeño laboral\n\nCollewet y Sauermann (2017)\nReducción de productividad por hora en jornadas más largas.\nLa fatiga como posible mecanismo.\n\nAplicación a Ecuador\n\nComparación entre empresas y sectores.\nProductividad medida como valor agregado por trabajador.\nAnálisis descriptivo y correlacional con ENESEM 2019.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Revisión de literatura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revisión de literatura</span>"
     ]
   },
   {
     "objectID": "capitulos/revision_literatura.html#relación-con-la-investigación",
     "href": "capitulos/revision_literatura.html#relación-con-la-investigación",
-    "title": "7  Revisión de literatura",
-    "section": "7.5 Relación con la investigación",
-    "text": "7.5 Relación con la investigación\nLos estudios revisados proporcionan fundamentos para analizar la relación entre horas de trabajo y productividad.\nSin embargo, sus resultados no pueden extrapolarse automáticamente a las empresas ecuatorianas, debido a las diferencias en las unidades de análisis, las actividades económicas y las medidas de productividad.\nLa presente investigación contribuye con evidencia descriptiva y correlacional sobre empresas ecuatorianas, considerando sus diferencias sectoriales y territoriales.\nLa existencia de una brecha específica de conocimiento sobre Ecuador deberá confirmarse mediante la ampliación de la revisión bibliográfica.\n\n\n\n\nCollewet, Marion, y Jan Sauermann. 2017. «Working Hours and Productivity». Labour Economics 47: 96-106. https://doi.org/10.1016/j.labeco.2017.03.006.\n\n\nPencavel, John. 2015. «The Productivity of Working Hours». The Economic Journal 125 (589): 2052-76. https://doi.org/10.1111/ecoj.12166.",
+    "title": "2  Revisión de literatura",
+    "section": "2.4 Relación con la investigación",
+    "text": "2.4 Relación con la investigación\nLos estudios revisados proporcionan fundamentos para analizar la asociación entre las horas trabajadas y la productividad laboral de las empresas ecuatorianas.\nLa evidencia internacional muestra que esta relación no es uniforme, debido a que los resultados pueden variar según la actividad económica, la duración de la jornada y las características de las empresas. Asimismo, factores como la intensidad de capital, la tecnología y la organización laboral pueden contribuir a explicar las diferencias de productividad.\nSin embargo, estos resultados no pueden extrapolarse automáticamente al Ecuador, debido a las diferencias en las unidades de análisis, las actividades económicas y las medidas de productividad utilizadas.\nLa presente investigación analiza esta relación mediante los microdatos de ENESEM 2019, considerando las horas anuales trabajadas por persona ocupada y el valor agregado por trabajador. Además, incorpora comparaciones sectoriales y territoriales para identificar diferencias en el comportamiento productivo de las empresas.\nA diferencia de los estudios que evalúan cambios en las jornadas laborales mediante reformas o experimentos, esta investigación utiliza información correspondiente a un único año. Por tanto, sus resultados permiten describir asociaciones, pero no establecer efectos causales.\nEn consecuencia, la investigación aporta un diagnóstico descriptivo y correlacional de la relación entre horas trabajadas y productividad laboral en las empresas ecuatorianas comprendidas en ENESEM 2019. La existencia de una brecha específica de conocimiento sobre Ecuador deberá contrastarse con investigaciones nacionales adicionales.\n\n\n\n\nAnxo, Dominique, y Arne Bigsten. 1989. «Working Hours and Productivity in Swedish Manufacturing». The Scandinavian Journal of Economics 91 (3): 613-19. https://doi.org/10.2307/3440088.\n\n\nAtack, Jeremy, Fred Bateman, y Robert A. Margo. 2003. «Productivity in Manufacturing and the Length of the Working Day: Evidence from the 1880 Census of Manufactures». Explorations in Economic History 40 (2): 170-94. https://doi.org/10.1016/S0014-4983(03)00016-0.\n\n\nBatut, Cyprien, Andrea Garnero, y Alessandro Tondini. 2023. «The Employment Effects of Working Time Reductions: Sector-Level Evidence from European Reforms». Industrial Relations: A Journal of Economy and Society 62 (3): 217-32. https://doi.org/10.1111/irel.12323.\n\n\nBloom, Nicholas, James Liang, John Roberts, y Zhichun Jenny Ying. 2015. «Does Working from Home Work? Evidence from a Chinese Experiment». The Quarterly Journal of Economics 130 (1): 165-218. https://doi.org/10.1093/qje/qju032.\n\n\nBöckerman, Petri, y Pekka Ilmakunnas. 2012. «The Job Satisfaction-Productivity Nexus: A Study Using Matched Survey and Register Data». ILR Review 65 (2): 244-62. https://doi.org/10.1177/001979391206500203.\n\n\nBoltz, Marie, Bart Cockx, Ana Maria Diaz, y Luz Magdalena Salas. 2023. «How Does Working-Time Flexibility Affect Workers’ Productivity in a Routine Job? Evidence from a Field Experiment». British Journal of Industrial Relations 61 (1): 159-87. https://doi.org/10.1111/bjir.12695.\n\n\nBrummelhuis, L. ten, C. Calderwood, C. Rosen, y A. Gabriel. 2025. «Peaking Today, Taking It Easy Tomorrow: Daily Performance Dynamics of Working Long Hours». Journal of Organizational Behavior 46 (4): 530-47. https://doi.org/10.1002/job.2847.\n\n\nCette, Gilbert, Simon Drapala, y Jimmy Lopez. 2026. «Hours Worked, Productivity and Unemployment». Transfer: European Review of Labour and Research, advance online publication. https://doi.org/10.1177/10242589261460189.\n\n\nClemens, Marco, y Jan Sauermann. 2025. «Making the Right Call: The Heterogeneous Effects of Individual Performance Pay on Productivity». Labour Economics 94: 102694. https://doi.org/10.1016/j.labeco.2025.102694.\n\n\nCollewet, Marion, y Jan Sauermann. 2017. «Working Hours and Productivity». Labour Economics 47: 96-106. https://doi.org/10.1016/j.labeco.2017.03.006.\n\n\nDeole, Sumit S., Max Deter, y Yue Huang. 2023. «Home Sweet Home: Working from Home and Employee Performance During the COVID-19 Pandemic in the UK». Labour Economics 80: 102295. https://doi.org/10.1016/j.labeco.2022.102295.\n\n\nDeVaro, Jed. 2025. «Work Schedules». Journal of Economic Behavior and Organization 238: 107209. https://doi.org/10.1016/j.jebo.2025.107209.\n\n\nDevicienti, Francesco, Elena Grinza, y Davide Vannoni. 2018. «The Impact of Part-Time Work on Firm Productivity: Evidence from Italy». Industrial and Corporate Change 27 (2): 321-47. https://doi.org/10.1093/icc/dtx037.\n\n\nEden, Maya. 2021. «Time-Inseparable Labor Productivity and the Workweek». The Scandinavian Journal of Economics 123 (3): 940-65. https://doi.org/10.1111/sjoe.12429.\n\n\nMühl, Arabella, y Christian Korunka. 2024. «You Get What You Expect: Assessing the Effect of a Compressed Work Schedule on Time Pressure, Fatigue, Perceived Productivity, and Work-Life Balance». European Journal of Work and Organizational Psychology 33 (5): 703-11. https://doi.org/10.1080/1359432X.2024.2379061.\n\n\nPark, WooRam, y Yoonsoo Park. 2019. «When Less is More: The Impact of the Regulation on Standard Workweek on Labor Productivity in South Korea». Journal of Policy Analysis and Management 38 (3): 681-705. https://doi.org/10.1002/pam.22136.\n\n\nPencavel, John. 2015. «The Productivity of Working Hours». The Economic Journal 125 (589): 2052-76. https://doi.org/10.1111/ecoj.12166.\n\n\nShangguan, Ruo, Jed DeVaro, y Hideo Owan. 2025. «Productivity and Working Hours Within Teams of Knowledge Workers». International Economic Review 66 (4): 1645-64. https://doi.org/10.1111/iere.12769.\n\n\nShao, Lin, Faisal Sohail, y Emircan Yurdagul. 2023. «Are Working Hours Complements in Production?» Journal of Economic Dynamics and Control 153: 104696. https://doi.org/10.1016/j.jedc.2023.104696.\n\n\nShepard, Edward, y Thomas Clifton. 2000. «Are Longer Hours Reducing Productivity in Manufacturing?» International Journal of Manpower 21 (7): 540-53. https://doi.org/10.1108/01437720010378999.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Revisión de literatura</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revisión de literatura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/datos_variables.html",
+    "href": "capitulos/datos_variables.html",
+    "title": "3  Datos y variables",
+    "section": "",
+    "text": "3.1 Fuente de información\nLa investigación utiliza microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) de Ecuador.\nLa base original contiene 3.779 registros empresariales y 1.060 variables. El estudio se concentra en las horas trabajadas, el valor agregado, el personal ocupado y las características económicas y territoriales de las empresas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/datos_variables.html#variables-principales",
+    "href": "capitulos/datos_variables.html#variables-principales",
+    "title": "3  Datos y variables",
+    "section": "3.2 Variables principales",
+    "text": "3.2 Variables principales\n\n\n\n\n\n\n\n\nVariable\nCódigo ENESEM\nDescripción\n\n\n\n\nHoras trabajadas\nhanuales\nTotal de horas anuales trabajadas\n\n\nValor agregado\nvalag\nValor agregado empresarial en USD\n\n\nPersonal ocupado\ntotalpeoc\nNúmero de personas ocupadas\n\n\nFactor de expansión\nf_exp\nPonderación de la encuesta\n\n\nSector económico\ndes_sector\nActividad económica agregada\n\n\nProvincia\nprovincia\nUbicación territorial",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/datos_variables.html#construcción-de-indicadores",
+    "href": "capitulos/datos_variables.html#construcción-de-indicadores",
+    "title": "3  Datos y variables",
+    "section": "3.3 Construcción de indicadores",
+    "text": "3.3 Construcción de indicadores\nLa duración del trabajo se expresa mediante las horas anuales trabajadas por persona ocupada:\n\\[\nH_i = \\frac{\\text{Horas anuales trabajadas}_i}\n{\\text{Personal ocupado}_i}\n\\]\nLa productividad laboral se mide como el valor agregado por persona ocupada:\n\\[\nP_i = \\frac{\\text{Valor agregado}_i}\n{\\text{Personal ocupado}_i}\n\\]\nAmbos indicadores permiten realizar comparaciones entre empresas. Sin embargo, comparten el personal ocupado como denominador, lo cual debe considerarse al interpretar su correlación.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/datos_variables.html#tratamiento-de-datos",
+    "href": "capitulos/datos_variables.html#tratamiento-de-datos",
+    "title": "3  Datos y variables",
+    "section": "3.4 Tratamiento de datos",
+    "text": "3.4 Tratamiento de datos\nSe conservaron los registros originales y se construyeron indicadores de calidad para identificar valores faltantes, productividad no positiva y observaciones con un número reducido de horas anuales por trabajador.\nLa muestra utilizada para el análisis correlacional incluye empresas con valores finitos de ambos indicadores y sector económico identificado.\n\n\n\nResumen del tratamiento de datos, ENESEM 2019\n\n\nIndicador\nObservaciones\n\n\n\n\nEmpresas originales\n3779\n\n\nSin indicador de horas valido\n102\n\n\nSin indicador de productividad valido\n72\n\n\nProductividad no positiva\n137\n\n\nHoras anuales por trabajador menores a 1000\n18\n\n\nEmpresas validas para correlacion\n3677\n\n\nEmpresas validas con valor agregado positivo\n3544\n\n\n\n\n\nLas categorías de revisión pueden superponerse y no representan necesariamente exclusiones independientes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/datos_variables.html#alcance-de-la-información",
+    "href": "capitulos/datos_variables.html#alcance-de-la-información",
+    "title": "3  Datos y variables",
+    "section": "3.5 Alcance de la información",
+    "text": "3.5 Alcance de la información\nEl análisis corresponde al año 2019 y estudia asociaciones entre características empresariales observadas durante ese período.\nLos resultados descriptivos y correlacionales no permiten establecer que una reducción de las horas de trabajo provoque cambios en la productividad laboral.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Datos y variables</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html",
+    "href": "capitulos/diagnostico_sectorial.html",
+    "title": "4  Diagnóstico sectorial",
+    "section": "",
+    "text": "4.1 Objetivo y alcance\nCaracterizar las horas trabajadas y la productividad laboral de las empresas según su sector económico.\nEl análisis examina cinco sectores económicos: comercio, construcción, manufactura, minería y servicios. Para ello, se utilizan los microdatos procesados de la Encuesta Estructural Empresarial (ENESEM) 2019, elaborada por el Instituto Nacional de Estadística y Censos (INEC) del Ecuador.\nLa productividad laboral se mide mediante el valor agregado por persona ocupada, expresado en dólares estadounidenses. La intensidad del trabajo se aproxima mediante las horas anuales trabajadas por persona ocupada.\nEl diagnóstico permite identificar diferencias sectoriales, examinar la distribución de los indicadores entre empresas y reconocer posibles problemas y potencialidades productivas.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#preparación-de-los-datos",
+    "href": "capitulos/diagnostico_sectorial.html#preparación-de-los-datos",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.2 Preparación de los datos",
+    "text": "4.2 Preparación de los datos\nSe trabaja con 3677 empresas que cuentan con información válida sobre horas trabajadas, valor agregado, personal ocupado, sector económico y factor de expansión.\nEl tratamiento conserva las observaciones con valor agregado negativo o igual a cero. Los indicadores sectoriales agregados se calculan como cocientes entre totales expandidos mediante el factor de expansión de ENESEM 2019.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#distribución-de-empresas-por-sector-económico",
+    "href": "capitulos/diagnostico_sectorial.html#distribución-de-empresas-por-sector-económico",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.3 Distribución de empresas por sector económico",
+    "text": "4.3 Distribución de empresas por sector económico\nLa distribución de observaciones permite caracterizar la composición sectorial de la muestra y contextualizar las comparaciones posteriores.\n\n\n\n\nTabla 4.1: Distribución de empresas de la muestra por sector económico, ENESEM 2019\n\n\n\n\n\n\nSector económico\nEmpresas\nPorcentaje de la muestra (%)\n\n\n\n\nComercio\n1569\n42,67\n\n\nConstrucción\n208\n5,66\n\n\nManufactura\n718\n19,53\n\n\nMinería\n104\n2,83\n\n\nServicios\n1078\n29,32\n\n\n\n\n\n\n\n\nEl comercio concentra 1569 empresas, equivalentes al 42,7 % de los registros válidos.\nLe siguen los servicios, con una participación del 29,3 %, mientras que la minería presenta la menor participación en el número de empresas observadas.\nEsta distribución refleja diferencias en la composición sectorial de la muestra y resulta relevante para interpretar los indicadores productivos.\nNota: los porcentajes corresponden a las empresas observadas en la muestra y no representan participaciones expandidas del universo empresarial.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#horas-trabajadas-y-productividad-agregada",
+    "href": "capitulos/diagnostico_sectorial.html#horas-trabajadas-y-productividad-agregada",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.4 Horas trabajadas y productividad agregada",
+    "text": "4.4 Horas trabajadas y productividad agregada\nPara comparar el desempeño económico de los sectores se utilizan dos indicadores.\nLas horas anuales trabajadas por persona ocupada se calculan mediante:\n\\[\nH_s =\n\\frac{\\sum_{i \\in s} h_i f_i}\n{\\sum_{i \\in s} n_i f_i}\n\\]\nLa productividad laboral agregada se calcula como:\n\\[\nP_s =\n\\frac{\\sum_{i \\in s} VA_i f_i}\n{\\sum_{i \\in s} n_i f_i}\n\\]\nDonde:\n\n\\(H_s\\): horas anuales trabajadas por persona ocupada del sector \\(s\\).\n\\(P_s\\): valor agregado por persona ocupada del sector \\(s\\).\n\\(h_i\\): horas anuales trabajadas de la empresa \\(i\\).\n\\(VA_i\\): valor agregado de la empresa \\(i\\).\n\\(n_i\\): personal ocupado de la empresa \\(i\\).\n\\(f_i\\): factor de expansión correspondiente a la empresa \\(i\\).\n\nLos indicadores se calculan mediante cocientes entre totales ponderados, evitando confundirlos con el promedio simple de los indicadores individuales de las empresas.\n\n\n\n\nTabla 4.2: Horas anuales por trabajador y productividad laboral agregada según sector, ENESEM 2019\n\n\n\n\n\n\n\n\n\n\n\n\nSector económico\nEmpresas\nHoras anuales por trabajador\nProductividad (USD/trabajador)\n\n\n\n\nComercio\n1569\n2.611,4\n25.589,60\n\n\nConstrucción\n208\n2.595,3\n24.479,57\n\n\nManufactura\n718\n2.689,2\n23.719,46\n\n\nMinería\n104\n2.700,6\n181.087,91\n\n\nServicios\n1078\n2.573,8\n28.056,15\n\n\n\n\n\n\n\n\nLa minería registra la mayor productividad agregada, con USD 181.087,91 por trabajador, y también presenta el indicador más elevado de horas anuales por persona ocupada.\nEn contraste, los servicios registran la menor cantidad de horas trabajadas, con 2.573,8 horas anuales por trabajador.\nEstas diferencias muestran que los niveles de productividad sectorial no siguen una relación uniforme con la cantidad de horas trabajadas.\nNo obstante, las diferencias de valor agregado por trabajador pueden responder también a factores como la intensidad de capital, la tecnología, la organización empresarial y la composición de las actividades productivas.\n\n4.4.1 Consideración metodológica sobre las horas anuales\nEl indicador de horas por trabajador se construye a partir de la variable hanuales de ENESEM 2019, dividida para el personal ocupado registrado por la empresa.\nAntes de comparar estos resultados con la jornada laboral legal ecuatoriana, es necesario verificar en la documentación metodológica del INEC la construcción exacta de hanuales, los tipos de horas incluidos y su relación con las categorías de personal ocupado.\nPor tanto, las horas anuales por persona ocupada se interpretan como un indicador estadístico de utilización del trabajo y no como una medición directa de la jornada contractual de cada trabajador.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#comparación-gráfica-de-las-horas-trabajadas",
+    "href": "capitulos/diagnostico_sectorial.html#comparación-gráfica-de-las-horas-trabajadas",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.5 Comparación gráfica de las horas trabajadas",
+    "text": "4.5 Comparación gráfica de las horas trabajadas\nEl siguiente gráfico permite visualizar las diferencias en el tiempo de trabajo entre sectores económicos.\n\n\n\n\n\n\n\n\nFigura 4.1: Horas anuales por trabajador según sector económico, ENESEM 2019\n\n\n\n\n\nLas horas anuales por trabajador presentan valores relativamente cercanos entre los cinco sectores.\nLa minería registra el valor más elevado, mientras que los servicios presentan el menor, con una diferencia de 126,8 horas al año.\nEsta comparación describe diferencias sectoriales en la utilización del tiempo de trabajo, sin establecer sus causas.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#comparación-gráfica-de-la-productividad-laboral",
+    "href": "capitulos/diagnostico_sectorial.html#comparación-gráfica-de-la-productividad-laboral",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.6 Comparación gráfica de la productividad laboral",
+    "text": "4.6 Comparación gráfica de la productividad laboral\nEl valor agregado por persona ocupada permite examinar las diferencias en la productividad agregada entre sectores.\n\n\n\n\n\n\n\n\nFigura 4.2: Valor agregado por trabajador según sector económico, ENESEM 2019\n\n\n\n\n\nLa productividad agregada de la minería destaca considerablemente frente a los demás sectores económicos.\nComercio, construcción, manufactura y servicios registran niveles mucho más próximos entre sí.\nLa marcada diferencia de productividad minera puede estar relacionada con la intensidad de capital, la escala de operaciones y las características específicas de la actividad económica.\nPor consiguiente, una mayor productividad agregada no implica necesariamente una mayor eficiencia individual de los trabajadores.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#distribución-de-los-indicadores-entre-empresas",
+    "href": "capitulos/diagnostico_sectorial.html#distribución-de-los-indicadores-entre-empresas",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.7 Distribución de los indicadores entre empresas",
+    "text": "4.7 Distribución de los indicadores entre empresas\nLos indicadores agregados permiten caracterizar el desempeño sectorial, pero no muestran completamente las diferencias existentes entre las empresas de una misma actividad económica.\nPara complementar el diagnóstico se calculan la mediana, la desviación estándar y los percentiles 25 y 75 de las horas trabajadas y de la productividad laboral individual.\nA diferencia de los indicadores agregados anteriores, estas estadísticas describen las observaciones empresariales de la muestra sin aplicar ponderaciones.\nPor ello, la mediana representa una empresa típica de la muestra y no debe confundirse con el cociente entre los totales ponderados de un sector.\n\n\n\n\nTabla 4.3: Mediana, desviación estándar y cuartiles de horas y productividad laboral por sector, ENESEM 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSector\nIndicador\nMediana\nDesviación estándar\nPercentil 25\nPercentil 75\n\n\n\n\nComercio\nHoras por trabajador\n2.795,3\n501,2\n2.002,0\n2.880,0\n\n\nComercio\nProductividad (USD)\n23.102,2\n76.303,5\n14.597,3\n39.791,2\n\n\nConstrucción\nHoras por trabajador\n2.751,1\n541,5\n1.961,2\n2.880,0\n\n\nConstrucción\nProductividad (USD)\n21.738,3\n122.504,8\n12.945,8\n42.333,9\n\n\nManufactura\nHoras por trabajador\n2.809,3\n546,0\n2.157,3\n3.024,7\n\n\nManufactura\nProductividad (USD)\n23.099,2\n34.862,4\n15.740,4\n34.298,6\n\n\nMinería\nHoras por trabajador\n2.644,3\n638,1\n1.984,8\n2.965,4\n\n\nMinería\nProductividad (USD)\n26.678,3\n1.150.126,7\n15.963,5\n81.327,8\n\n\nServicios\nHoras por trabajador\n2.718,7\n524,5\n1.942,6\n2.880,0\n\n\nServicios\nProductividad (USD)\n21.731,4\n652.812,1\n13.481,0\n36.833,3\n\n\n\n\n\n\n\n\nLas medianas y los percentiles permiten identificar diferencias importantes entre las empresas de un mismo sector económico.\nEn minería, la mediana de productividad es de USD 26.678,3 por trabajador, un valor considerablemente inferior al indicador agregado sectorial.\nEsta diferencia requiere una interpretación cuidadosa, dado que la mediana empresarial y la productividad calculada mediante totales ponderados representan medidas estadísticas distintas.\nLa desviación estándar complementa el análisis, aunque puede verse afectada por observaciones extremas, particularmente en actividades con empresas de gran escala.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#distribución-de-las-horas-trabajadas",
+    "href": "capitulos/diagnostico_sectorial.html#distribución-de-las-horas-trabajadas",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.8 Distribución de las horas trabajadas",
+    "text": "4.8 Distribución de las horas trabajadas\nLos diagramas de caja permiten examinar la dispersión, los valores centrales y las diferencias entre empresas de un mismo sector.\n\n\n\n\n\n\n\n\nFigura 4.3: Distribución de horas anuales por trabajador según sector económico, ENESEM 2019\n\n\n\n\n\nEl diagrama permite observar que existen diferencias en la distribución de las horas anuales trabajadas entre las empresas de cada sector.\nEl sector Minería presenta la mayor amplitud entre los percentiles 25 y 75, lo que refleja una mayor dispersión central de las horas registradas por persona ocupada.\nLa visualización se limita al intervalo comprendido entre los percentiles globales 1 y 99 para facilitar su lectura.\nEsta limitación es exclusivamente gráfica y no representa una eliminación de observaciones de los cálculos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#distribución-de-la-productividad-laboral",
+    "href": "capitulos/diagnostico_sectorial.html#distribución-de-la-productividad-laboral",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.9 Distribución de la productividad laboral",
+    "text": "4.9 Distribución de la productividad laboral\nLa productividad empresarial puede presentar diferencias considerables incluso dentro de un mismo sector económico.\nPara examinar esta heterogeneidad, se utiliza un segundo diagrama de caja.\n\n\n\n\n\n\n\n\nFigura 4.4: Distribución de productividad laboral por empresa y sector, ENESEM 2019\n\n\n\n\n\nLa distribución de la productividad muestra diferencias entre empresas, incluso dentro de una misma actividad económica.\nEl sector Minería registra el mayor rango intercuartílico de productividad laboral.\nEstas diferencias permiten comprender por qué los indicadores agregados pueden apartarse considerablemente de los valores observados en una empresa típica.\nAsimismo, reflejan la importancia de considerar la heterogeneidad empresarial antes de formular conclusiones generales sobre la productividad de cada sector.\nNota: el gráfico utiliza una ventana visual comprendida entre los percentiles globales 1 y 95 para facilitar la comparación. Esta decisión no elimina registros ni modifica los resultados calculados. Los valores negativos o iguales a cero de productividad se conservaron cuando cumplían los criterios de validez definidos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_sectorial.html#síntesis-del-diagnóstico-sectorial",
+    "href": "capitulos/diagnostico_sectorial.html#síntesis-del-diagnóstico-sectorial",
+    "title": "4  Diagnóstico sectorial",
+    "section": "4.10 Síntesis del diagnóstico sectorial",
+    "text": "4.10 Síntesis del diagnóstico sectorial\nEl diagnóstico sectorial de ENESEM 2019 evidencia diferencias relevantes en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas.\nLa minería presenta el mayor nivel agregado de valor agregado por persona ocupada, mientras que las actividades de comercio, construcción, manufactura y servicios registran valores considerablemente inferiores.\nSin embargo, las diferencias de productividad entre sectores no siguen una correspondencia uniforme con las horas trabajadas.\nAdicionalmente, el análisis de las distribuciones individuales evidencia una heterogeneidad importante dentro de cada sector, particularmente en los indicadores de productividad.\nEstos resultados permiten identificar posibles diferencias productivas que serán examinadas posteriormente en los apartados de diagnóstico territorial, problemas y potencialidades, y evidencia correlacional.\nEn términos metodológicos, las comparaciones presentadas son descriptivas y no permiten atribuir las diferencias de productividad exclusivamente a la duración del tiempo de trabajo.\nTampoco constituyen evidencia causal de que aumentar o reducir las horas laborales produzca cambios en el valor agregado generado por las empresas.\nFuente de las tablas y gráficos: Elaboración propia a partir de los microdatos de ENESEM 2019, Instituto Nacional de Estadística y Censos (INEC), Ecuador.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diagnóstico sectorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_territorial.html",
+    "href": "capitulos/diagnostico_territorial.html",
+    "title": "5  Diagnóstico territorial",
+    "section": "",
+    "text": "5.1 Caracterización territorial\nEl diagnóstico territorial examina las diferencias en las horas anuales trabajadas y la productividad laboral de las empresas ecuatorianas según su ubicación provincial.\nEl propósito es identificar patrones de heterogeneidad territorial y explorar la distribución espacial de los indicadores productivos.\nEl análisis se realiza con los microdatos de la Encuesta Estructural Empresarial (ENESEM) 2019.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_territorial.html#productividad-laboral-por-provincia",
+    "href": "capitulos/diagnostico_territorial.html#productividad-laboral-por-provincia",
+    "title": "5  Diagnóstico territorial",
+    "section": "5.2 Productividad laboral por provincia",
+    "text": "5.2 Productividad laboral por provincia\nLa siguiente tabla presenta el número de empresas de la muestra, las horas anuales por persona ocupada y el valor agregado por trabajador para cada provincia.\n\n\n\n\nTabla 5.1: Horas trabajadas y productividad laboral por provincia, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nEmpresas\nHoras anuales por trabajador\nProductividad (USD/trabajador)\n\n\n\n\nAzuay\n219\n2525.0\n37337.14\n\n\nBolívar\n1\n3190.6\n35166.12\n\n\nCañar\n12\n3894.7\n15408.52\n\n\nCarchi\n9\n2050.8\n18086.23\n\n\nCotopaxi\n25\n2683.7\n20311.17\n\n\nChimborazo\n22\n2945.2\n21963.37\n\n\nEl Oro\n117\n2226.9\n19428.51\n\n\nEsmeraldas\n27\n2549.1\n65498.93\n\n\nGuayas\n1333\n2590.5\n27450.29\n\n\nImbabura\n41\n2724.5\n19845.37\n\n\nLoja\n31\n2397.9\n26699.49\n\n\nLos Ríos\n77\n2682.5\n19167.86\n\n\nManabí\n150\n2446.4\n16854.77\n\n\nMorona Santiago\n2\n2234.2\n17967.45\n\n\nNapo\n2\n3029.8\n37321.68\n\n\nPastaza\n3\n3089.3\n27209.10\n\n\nPichincha\n1364\n2665.5\n37678.31\n\n\nTungurahua\n111\n2702.7\n19335.93\n\n\nZamora Chinchipe\n6\n2243.6\n-24010.71\n\n\nGalápagos\n6\n2855.5\n45302.53\n\n\nSucumbíos\n11\n2974.5\n12673.44\n\n\nOrellana\n14\n2821.1\n19490.47\n\n\nSanto Domingo de los Tsáchilas\n76\n2432.3\n16427.10\n\n\nSanta Elena\n18\n2632.8\n15590.50\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_territorial.html#análisis-de-los-resultados",
+    "href": "capitulos/diagnostico_territorial.html#análisis-de-los-resultados",
+    "title": "5  Diagnóstico territorial",
+    "section": "5.3 Análisis de los resultados",
+    "text": "5.3 Análisis de los resultados\nLos resultados evidencian diferencias territoriales en la productividad laboral.\nPichincha y Guayas concentran una proporción importante de los registros empresariales analizados, mientras que otras provincias presentan tamaños de muestra considerablemente menores.\nEntre los resultados preliminares, Azuay y Pichincha registran indicadores agregados de productividad cercanos a USD 37.000 por trabajador.\nPor otra parte, existen provincias con valores relativamente reducidos e incluso indicadores agregados negativos, lo que requiere examinar la composición sectorial y las características de las empresas incluidas.\nEstas diferencias constituyen evidencia descriptiva de heterogeneidad territorial, pero no permiten atribuir las brechas únicamente a la localización geográfica.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/diagnostico_territorial.html#limitaciones-del-diagnóstico-territorial",
+    "href": "capitulos/diagnostico_territorial.html#limitaciones-del-diagnóstico-territorial",
+    "title": "5  Diagnóstico territorial",
+    "section": "5.4 Limitaciones del diagnóstico territorial",
+    "text": "5.4 Limitaciones del diagnóstico territorial\nLa precisión de los indicadores provinciales puede verse afectada por el reducido número de observaciones disponibles en determinados territorios.\nPor tanto, las comparaciones deben interpretarse con precaución, particularmente en provincias con muy pocas empresas en la muestra.\nLos indicadores fueron construidos utilizando el factor de expansión disponible en ENESEM. Sin embargo, todavía no se han calculado errores estándar ni intervalos de confianza del diseño muestral.\nEn consecuencia, el diagnóstico permite identificar diferencias observadas, pero no establecer formalmente su significancia estadística.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagnóstico territorial</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html",
+    "href": "capitulos/problemas_potencialidades.html",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "",
+    "text": "6.1 Identificación de brechas de productividad\nLa identificación de problemas y potencialidades se desarrolla mediante la comparación de indicadores productivos entre provincias y sectores económicos.\nPara cada combinación provincia-sector, se calcula la diferencia porcentual entre su productividad laboral y el indicador agregado nacional correspondiente al mismo sector.\nLa brecha de productividad se define como:\n\\[\nB_{ps} =\n\\left(\n\\frac{P_{ps}}{P_s} - 1\n\\right)\\times 100\n\\]\nDonde:\nUna brecha positiva indica que la productividad del grupo se encuentra por encima de su referencia sectorial. Una brecha negativa indica que está por debajo.\nEstos indicadores constituyen medidas relativas de desempeño productivo, no estimaciones directas de eficiencia técnica.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html#identificación-de-brechas-de-productividad",
+    "href": "capitulos/problemas_potencialidades.html#identificación-de-brechas-de-productividad",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "",
+    "text": "\\(B_{ps}\\): brecha porcentual de productividad de la provincia \\(p\\) en el sector \\(s\\).\n\\(P_{ps}\\): productividad laboral de la combinación provincia-sector.\n\\(P_s\\): productividad laboral agregada del sector a escala nacional.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html#potencialidades-productivas",
+    "href": "capitulos/problemas_potencialidades.html#potencialidades-productivas",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "6.2 Potencialidades productivas",
+    "text": "6.2 Potencialidades productivas\nLa siguiente tabla presenta las combinaciones provincia-sector con las mayores brechas positivas.\n\n\n\n\nTabla 6.1: Principales brechas positivas de productividad, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nSector\nEmpresas\nBrecha (%)\nDiferencia de horas\n\n\n\n\n27\nAzuay\nServicios\n36\n177.51\n-162.3\n\n\n26\nPichincha\nMinería\n59\n72.33\n289.4\n\n\n8\nPichincha\nComercio\n506\n25.89\n40.7\n\n\n19\nGuayas\nManufactura\n286\n25.33\n-31.6\n\n\n14\nPichincha\nConstrucción\n82\n22.09\n-21.8\n\n\n2\nEl Oro\nComercio\n67\n18.38\n-454.9\n\n\n32\nGuayas\nServicios\n387\n11.26\n-26.8\n\n\n15\nAzuay\nManufactura\n51\n4.81\n-72.2\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\n\n6.2.1 Interpretación de las potencialidades\nEntre los resultados destaca el sector servicios de Azuay, que presenta una brecha positiva de productividad del 177,51 %, acompañada de 162,3 horas anuales menos por trabajador respecto a la referencia sectorial.\nTambién sobresale el sector minero de Pichincha, cuya productividad supera en 72,33 % la referencia nacional del sector.\nEstos resultados permiten identificar actividades económicas que merecen un análisis más detallado para comprender sus características productivas.\nSin embargo, las diferencias podrían estar relacionadas con intensidad de capital, tecnología, especialización empresarial o valores extremos.\nNo es posible afirmar que representen una mayor eficiencia laboral únicamente con estos indicadores.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html#posibles-problemas-productivos",
+    "href": "capitulos/problemas_potencialidades.html#posibles-problemas-productivos",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "6.3 Posibles problemas productivos",
+    "text": "6.3 Posibles problemas productivos\nLa siguiente tabla presenta las combinaciones provincia-sector con las mayores brechas negativas.\n\n\n\n\nTabla 6.2: Principales brechas negativas de productividad, Ecuador 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProvincia\nSector\nEmpresas\nBrecha (%)\nDiferencia de horas\n\n\n\n\n24\nEl Oro\nMinería\n10\n-93.43\n-506.5\n\n\n25\nAzuay\nMinería\n21\n-89.89\n-334.6\n\n\n28\nImbabura\nServicios\n11\n-54.78\n200.9\n\n\n23\nSanto Domingo\nManufactura\n14\n-51.96\n-644.9\n\n\n9\nLoja\nComercio\n16\n-50.32\n-340.8\n\n\n29\nEl Oro\nServicios\n21\n-45.75\n-497.5\n\n\n30\nManabi\nServicios\n37\n-43.61\n-452.0\n\n\n5\nCotopaxi\nComercio\n15\n-43.36\n-64.2\n\n\n34\nTungurahua\nServicios\n21\n-42.83\n-24.9\n\n\n33\nSanto Domingo\nServicios\n15\n-42.19\n-158.4\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\n\n6.3.1 Interpretación de los posibles problemas\nLos resultados muestran brechas negativas importantes en determinadas combinaciones provincia-sector.\nEntre ellas destaca el sector servicios de Imbabura, que registra una productividad 54,78 % inferior a la referencia sectorial, pese a presentar aproximadamente 200,9 horas anuales adicionales por trabajador.\nTambién se identifican brechas negativas en actividades mineras de El Oro y Azuay, así como en el comercio de Loja.\nEstas diferencias pueden orientar la identificación de posibles problemas productivos, pero no constituyen evidencia suficiente para determinar sus causas.\nUna productividad relativamente baja podría reflejar características del capital empresarial, diferencias tecnológicas, composición productiva u otras condiciones no observadas.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html#síntesis-del-diagnóstico",
+    "href": "capitulos/problemas_potencialidades.html#síntesis-del-diagnóstico",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "6.4 Síntesis del diagnóstico",
+    "text": "6.4 Síntesis del diagnóstico\nEl análisis identifica una heterogeneidad considerable en las condiciones productivas de las empresas ecuatorianas.\nAlgunas combinaciones provincia-sector presentan mayor productividad relativa con menos horas de trabajo, mientras que otras registran menor productividad pese a jornadas relativamente más extensas.\nNo obstante, estos patrones no son uniformes y no deben interpretarse como evidencia causal de que una reducción de horas aumentaría la productividad.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/problemas_potencialidades.html#precauciones-metodológicas",
+    "href": "capitulos/problemas_potencialidades.html#precauciones-metodológicas",
+    "title": "6  Problemas y potencialidades productivas",
+    "section": "6.5 Precauciones metodológicas",
+    "text": "6.5 Precauciones metodológicas\nPara este diagnóstico preliminar se presentan indicadores únicamente de combinaciones provincia-sector con al menos diez empresas observadas.\nDe las 84 combinaciones identificadas, 50 tienen menos de diez empresas y requieren especial precaución.\nEl umbral utilizado es un criterio exploratorio de presentación y no garantiza precisión estadística.\nAdemás, las brechas de productividad dependen de la estructura sectorial, de las ponderaciones aplicadas y de la composición de las empresas incluidas en cada grupo.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Problemas y potencialidades productivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html",
+    "href": "capitulos/evidencia_correlacional.html",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "",
+    "text": "7.1 Objetivo del análisis\nEl análisis correlacional examina la asociación entre las horas anuales trabajadas por persona ocupada y la productividad laboral de las empresas ecuatorianas.\nSe utilizan los coeficientes de Pearson y Spearman para describir la dirección y la intensidad de la relación entre ambas variables.\nLa correlación de Pearson permite estudiar la asociación lineal, mientras que la correlación de Spearman examina la asociación entre los rangos de las observaciones.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#muestra-de-análisis",
+    "href": "capitulos/evidencia_correlacional.html#muestra-de-análisis",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.2 Muestra de análisis",
+    "text": "7.2 Muestra de análisis\nLa base original contiene 3.779 registros empresariales.\nPara el análisis de correlación se utilizan 3.677 empresas con información válida de horas trabajadas y productividad laboral.\nSe mantienen las observaciones con valor agregado negativo o igual a cero, siempre que los indicadores requeridos sean válidos.\nLas observaciones con valores extremos se conservan en la estimación principal y se examinan mediante un análisis complementario de sensibilidad.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#correlación-general",
+    "href": "capitulos/evidencia_correlacional.html#correlación-general",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.3 Correlación general",
+    "text": "7.3 Correlación general\n\n\n\n\nTabla 7.1: Correlación general entre horas trabajadas y productividad, ENESEM 2019\n\n\n\n\n\n\nAnálisis\nEmpresas\nPearson\nSpearman\n\n\n\n\nGeneral\n3677\n-0.0477\n-0.0075\n\n\nPercentiles 1-99\n3534\n-0.0560\n-0.0097\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\nEl coeficiente de Pearson de la muestra completa es aproximadamente -0,0477, mientras que el coeficiente de Spearman es cercano a -0,0075.\nAmbos resultados indican que la asociación observada entre horas trabajadas y productividad es muy débil.\nEl análisis de sensibilidad, que excluye temporalmente las observaciones situadas fuera de los percentiles 1 y 99 de ambas variables, mantiene coeficientes cercanos a cero.\nEsto sugiere que la ausencia de una asociación general fuerte no depende exclusivamente de los valores extremos.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#correlación-ponderada-general",
+    "href": "capitulos/evidencia_correlacional.html#correlación-ponderada-general",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.4 Correlación ponderada general",
+    "text": "7.4 Correlación ponderada general\nSe calcula una correlación adicional utilizando el factor de expansión proporcionado por ENESEM.\n\n\n\n\nTabla 7.2: Correlación de Pearson ponderada, ENESEM 2019\n\n\n\n\n\n\nEmpresas\nPearson_ponderada\n\n\n\n\n3677\n-0.0033\n\n\n\n\n\n\n\n\nLa correlación ponderada es aproximadamente -0,0033, valor prácticamente nulo.\nPor tanto, los resultados descriptivos no muestran una asociación lineal general importante entre horas trabajadas y productividad laboral.\nEsta ponderación no sustituye el tratamiento completo del diseño muestral para realizar inferencias estadísticas.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#correlación-por-sector-económico",
+    "href": "capitulos/evidencia_correlacional.html#correlación-por-sector-económico",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.5 Correlación por sector económico",
+    "text": "7.5 Correlación por sector económico\n\n\n\n\nTabla 7.3: Correlaciones por sector económico, ENESEM 2019\n\n\n\n\n\n\nSector\nEmpresas\nPearson ponderada\nSpearman sin ponderar\n\n\n\n\nComercio\n1569\n0.0838\n-0.0462\n\n\nConstrucción\n208\n0.0457\n0.0475\n\n\nManufactura\n718\n0.1023\n0.1159\n\n\nMinería\n104\n-0.2632\n0.1282\n\n\nServicios\n1078\n0.0050\n-0.0652\n\n\n\n\n\n\n\n\nFuente: Elaboración propia a partir de ENESEM 2019, INEC.\nLos resultados presentan diferencias según la actividad económica.\nManufactura registra una correlación ponderada positiva débil, aproximadamente 0,1023.\nComercio y construcción también muestran asociaciones positivas de magnitud reducida.\nServicios presenta una correlación prácticamente nula.\nPor su parte, minería registra una correlación de Pearson ponderada negativa, aunque el análisis de sensibilidad evidencia que la relación es especialmente vulnerable a valores extremos.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#valores-extremos-en-minería",
+    "href": "capitulos/evidencia_correlacional.html#valores-extremos-en-minería",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.6 Valores extremos en minería",
+    "text": "7.6 Valores extremos en minería\nEn el sector minero, la correlación de Pearson sin ponderar de la muestra completa es aproximadamente -0,3621.\nAl excluir temporalmente los extremos de productividad correspondientes a los percentiles 1 y 99, el coeficiente se aproxima a -0,0145.\nEsta diferencia indica que el resultado inicial es sensible a observaciones extremas y no debe interpretarse como evidencia de una relación negativa generalizada.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#limitaciones-del-análisis",
+    "href": "capitulos/evidencia_correlacional.html#limitaciones-del-análisis",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.7 Limitaciones del análisis",
+    "text": "7.7 Limitaciones del análisis\nLos resultados deben interpretarse considerando las siguientes limitaciones:\n\nLa base corresponde a un único año, por lo que no permite observar cambios de productividad antes y después de modificaciones de jornada laboral.\nLas horas trabajadas y la productividad laboral se calculan utilizando el personal ocupado como denominador común. Esto puede generar asociaciones matemáticas que no reflejen exclusivamente una relación económica.\nLa productividad laboral puede depender de factores adicionales, como capital, tecnología, organización empresarial y composición sectorial.\nLas correlaciones presentadas son descriptivas. No se han estimado efectos causales ni se han realizado pruebas formales de significancia ajustadas al diseño muestral.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/evidencia_correlacional.html#interpretación-general",
+    "href": "capitulos/evidencia_correlacional.html#interpretación-general",
+    "title": "7  Evidencia empírica correlacional",
+    "section": "7.8 Interpretación general",
+    "text": "7.8 Interpretación general\nLa evidencia empírica de ENESEM 2019 no identifica una asociación lineal general fuerte entre las horas anuales trabajadas por persona ocupada y el valor agregado por trabajador.\nNo obstante, se observan diferencias sectoriales y territoriales que justifican continuar examinando la heterogeneidad productiva.\nEstos resultados no permiten concluir que una reducción de jornada laboral aumentaría o disminuiría la productividad de las empresas ecuatorianas.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evidencia empírica correlacional</span>"
     ]
   },
   {
@@ -424,7 +474,7 @@
     "href": "capitulos/referencias.html",
     "title": "Referencias",
     "section": "",
-    "text": "Collewet, Marion, and Jan Sauermann. 2017. “Working Hours and\nProductivity.” Labour Economics 47: 96–106. https://doi.org/10.1016/j.labeco.2017.03.006.\n\n\nPencavel, John. 2015. “The Productivity of Working Hours.”\nThe Economic Journal 125 (589): 2052–76. https://doi.org/10.1111/ecoj.12166.",
+    "text": "Anxo, Dominique, and Arne Bigsten. 1989. “Working Hours and\nProductivity in Swedish Manufacturing.” The Scandinavian\nJournal of Economics 91 (3): 613–19. https://doi.org/10.2307/3440088.\n\n\nAtack, Jeremy, Fred Bateman, and Robert A. Margo. 2003.\n“Productivity in Manufacturing and the Length of the Working Day:\nEvidence from the 1880 Census of Manufactures.” Explorations\nin Economic History 40 (2): 170–94. https://doi.org/10.1016/S0014-4983(03)00016-0.\n\n\nBatut, Cyprien, Andrea Garnero, and Alessandro Tondini. 2023. “The\nEmployment Effects of Working Time Reductions: Sector-Level Evidence\nfrom European Reforms.” Industrial Relations: A Journal of\nEconomy and Society 62 (3): 217–32. https://doi.org/10.1111/irel.12323.\n\n\nBloom, Nicholas, James Liang, John Roberts, and Zhichun Jenny Ying.\n2015. “Does Working from Home Work? Evidence from a Chinese\nExperiment.” The Quarterly Journal of Economics 130 (1):\n165–218. https://doi.org/10.1093/qje/qju032.\n\n\nBöckerman, Petri, and Pekka Ilmakunnas. 2012. “The Job\nSatisfaction-Productivity Nexus: A Study Using Matched Survey and\nRegister Data.” ILR Review 65 (2): 244–62. https://doi.org/10.1177/001979391206500203.\n\n\nBoltz, Marie, Bart Cockx, Ana Maria Diaz, and Luz Magdalena Salas. 2023.\n“How Does Working-Time Flexibility Affect Workers’ Productivity in\na Routine Job? Evidence from a Field Experiment.” British\nJournal of Industrial Relations 61 (1): 159–87. https://doi.org/10.1111/bjir.12695.\n\n\nBrummelhuis, L. ten, C. Calderwood, C. Rosen, and A. Gabriel. 2025.\n“Peaking Today, Taking It Easy Tomorrow: Daily Performance\nDynamics of Working Long Hours.” Journal of Organizational\nBehavior 46 (4): 530–47. https://doi.org/10.1002/job.2847.\n\n\nCette, Gilbert, Simon Drapala, and Jimmy Lopez. 2026. “Hours\nWorked, Productivity and Unemployment.” Transfer: European\nReview of Labour and Research, ahead of print. https://doi.org/10.1177/10242589261460189.\n\n\nClemens, Marco, and Jan Sauermann. 2025. “Making the Right Call:\nThe Heterogeneous Effects of Individual Performance Pay on\nProductivity.” Labour Economics 94: 102694. https://doi.org/10.1016/j.labeco.2025.102694.\n\n\nCollewet, Marion, and Jan Sauermann. 2017. “Working Hours and\nProductivity.” Labour Economics 47: 96–106. https://doi.org/10.1016/j.labeco.2017.03.006.\n\n\nDeole, Sumit S., Max Deter, and Yue Huang. 2023. “Home Sweet Home:\nWorking from Home and Employee Performance During the COVID-19 Pandemic\nin the UK.” Labour Economics 80: 102295. https://doi.org/10.1016/j.labeco.2022.102295.\n\n\nDeVaro, Jed. 2025. “Work Schedules.” Journal of\nEconomic Behavior and Organization 238: 107209. https://doi.org/10.1016/j.jebo.2025.107209.\n\n\nDevicienti, Francesco, Elena Grinza, and Davide Vannoni. 2018.\n“The Impact of Part-Time Work on Firm Productivity: Evidence from\nItaly.” Industrial and Corporate Change 27 (2): 321–47.\nhttps://doi.org/10.1093/icc/dtx037.\n\n\nEden, Maya. 2021. “Time-Inseparable Labor Productivity and the\nWorkweek.” The Scandinavian Journal of Economics 123\n(3): 940–65. https://doi.org/10.1111/sjoe.12429.\n\n\nMühl, Arabella, and Christian Korunka. 2024. “You Get What You\nExpect: Assessing the Effect of a Compressed Work Schedule on Time\nPressure, Fatigue, Perceived Productivity, and Work-Life\nBalance.” European Journal of Work and Organizational\nPsychology 33 (5): 703–11. https://doi.org/10.1080/1359432X.2024.2379061.\n\n\nPark, WooRam, and Yoonsoo Park. 2019. “When Less Is More: The\nImpact of the Regulation on Standard Workweek on Labor Productivity in\nSouth Korea.” Journal of Policy Analysis and Management\n38 (3): 681–705. https://doi.org/10.1002/pam.22136.\n\n\nPencavel, John. 2015. “The Productivity of Working Hours.”\nThe Economic Journal 125 (589): 2052–76. https://doi.org/10.1111/ecoj.12166.\n\n\nShangguan, Ruo, Jed DeVaro, and Hideo Owan. 2025. “Productivity\nand Working Hours Within Teams of Knowledge Workers.”\nInternational Economic Review 66 (4): 1645–64. https://doi.org/10.1111/iere.12769.\n\n\nShao, Lin, Faisal Sohail, and Emircan Yurdagul. 2023. “Are Working\nHours Complements in Production?” Journal of Economic\nDynamics and Control 153: 104696. https://doi.org/10.1016/j.jedc.2023.104696.\n\n\nShepard, Edward, and Thomas Clifton. 2000. “Are Longer Hours\nReducing Productivity in Manufacturing?” International\nJournal of Manpower 21 (7): 540–53. https://doi.org/10.1108/01437720010378999.",
     "crumbs": [
       "Referencias"
     ]
